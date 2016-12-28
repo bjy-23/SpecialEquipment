@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:material="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_login"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/top_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/titlebar_height"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:scaleType="fitXY"
+            android:src="@mipmap/icon_login" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/sub_title_height"
+        android:layout_marginRight="@dimen/sub_title_height"
+        android:background="@mipmap/login_input_bg"
+        android:orientation="vertical">
+
+        <com.wondersgroup.special.widget.ClearEditText
+            android:id="@+id/edit_name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="@string/user_hint"
+            android:maxLines="1"
+            android:paddingRight="@dimen/padding"
+            android:textColorHint="@color/text_grey"
+            android:textSize="@dimen/font_body" />
+
+        <include layout="@layout/subtitle_divide_line_bold" />
+
+        <com.wondersgroup.special.widget.ClearEditText
+            android:id="@+id/edit_password"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="@string/password_hint"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:paddingRight="@dimen/padding"
+            android:textColorHint="@color/text_grey"
+            android:textSize="@dimen/font_body" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/forget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/layout_name"
+        android:layout_below="@+id/layout_name"
+        android:paddingBottom="@dimen/padding"
+        android:paddingLeft="@dimen/padding"
+        android:paddingRight="@dimen/padding"
+        android:paddingTop="@dimen/indicator_internal_padding"
+        android:text="忘记密码?"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_caption" />
+
+    <TextView
+        android:id="@+id/button_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/layout_name"
+        android:layout_alignRight="@+id/layout_name"
+        android:layout_below="@+id/forget"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/shape_button_login"
+        android:gravity="center"
+        android:paddingBottom="8dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingTop="8dp"
+        android:text="@string/login"
+        android:textColor="@color/login_btn"
+        android:textSize="@dimen/font_button" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/titlebar_height"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/indicator_right_padding"
+            android:text="@string/app_title"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/app_subtitle"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</RelativeLayout>

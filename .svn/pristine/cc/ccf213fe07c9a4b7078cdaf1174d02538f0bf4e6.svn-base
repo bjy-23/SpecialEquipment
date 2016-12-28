@@ -1,0 +1,58 @@
+package com.wondersgroup.special.Employment.activity;
+
+import android.content.Context;
+import android.os.Bundle;
+import android.support.v7.widget.RecyclerView;
+
+import com.wondersgroup.special.R;
+import com.wondersgroup.special.ResponseCallBack;
+import com.wondersgroup.special.Employment.adapter.ExpandWorkAdapter;
+import com.wondersgroup.special.activity.BaseActivity;
+import com.wondersgroup.special.common.RecyclerBaseAdapter;
+import com.wondersgroup.special.constant.UrlConstant;
+import com.wondersgroup.special.entity.PworkInfo;
+import com.zhy.http.okhttp.OkHttpUtils;
+
+import java.util.ArrayList;
+
+/**
+ * Created by bjy on 2016/12/20.
+ */
+
+public class EmploymentExpandActivity extends BaseActivity implements RecyclerBaseAdapter.OnItemClickListener {
+    private RecyclerView recyclerView;
+    private ExpandWorkAdapter adapter;
+    private ArrayList datas;
+    private String uuid;
+    private int type;
+    private Context context;
+    @Override
+    protected void initView() {
+        context = this;
+        setContentView(R.layout.activity_employment_expand);
+        recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
+    }
+
+    @Override
+    protected void initData(Bundle savedInstanceState) {
+        datas = new ArrayList<PworkInfo>();
+        adapter = new ExpandWorkAdapter(context,datas);
+        recyclerView.setAdapter(adapter);
+
+        uuid = getIntent().getStringExtra("uuid");
+        type = getIntent().getIntExtra("type",0);
+
+        OkHttpUtils.get()
+                .url(UrlConstant.QUERY_PERSON_EXPAND_INFO)
+                .addParams("uuid",uuid)
+                .addParams("type",type+"")
+                .build()
+                .execute(new ResponseCallBack() {
+                });
+    }
+
+    @Override
+    public void onItemClick(int position) {
+
+    }
+}

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wondersgroup.special">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:name="com.wondersgroup.special.AppApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="x3rtdW03bThhwFuZUAQNwgfcxxth0PHm" />
+
+        <activity android:name="com.wondersgroup.special.activity.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.wondersgroup.special.activity.WelcomeActivity" />
+        <activity android:name="com.wondersgroup.special.activity.MainActivity" />
+        <activity android:name="com.wondersgroup.special.activity.unit.UseUnitActivity" />
+        <activity android:name="com.wondersgroup.special.activity.unit.UseUnitListActivity" />
+        <activity android:name="com.wondersgroup.special.activity.unit.UseUnitDetailActivity" />
+        <activity android:name="com.wondersgroup.special.activity.unit.ProductUnitActivity" />
+        <activity android:name="com.wondersgroup.special.activity.unit.ProductUnitListActivity" />
+        <activity android:name="com.wondersgroup.special.activity.unit.ProductUnitDetailActivity" />
+        <activity android:name="com.wondersgroup.special.activity.EmploymentActivity" />
+        <activity android:name="com.wondersgroup.special.activity.EmploymentListActivity" />
+        <activity android:name="com.wondersgroup.special.activity.EmploymentDetailActivity" />
+        <activity android:name="com.wondersgroup.special.activity.EquipmentActivity" />
+        <activity android:name="com.wondersgroup.special.activity.EquipmentListActivity" />
+        <activity android:name="com.wondersgroup.special.activity.EquipmentDetailActivity" />
+        <activity android:name="com.wondersgroup.special.activity.CategoryActivity" />
+        <activity android:name="com.wondersgroup.special.activity.AnalysisActivity" />
+        <activity android:name="com.wondersgroup.special.activity.OverviewActivity" />
+        <activity android:name="com.wondersgroup.special.activity.DetailActivity" />
+        <activity android:name="com.wondersgroup.special.activity.unit.CheckUnitActivity" />
+        <activity android:name="com.wondersgroup.special.activity.unit.CheckUnitListActivity" />
+        <activity android:name="com.wondersgroup.special.activity.EntPermitActivity" />
+        <activity android:name="com.wondersgroup.special.activity.EntPermitListActivity" />
+        <activity android:name="com.wondersgroup.special.activity.PersonPermitActivity" />
+        <activity android:name="com.wondersgroup.special.activity.PersonPermitListActivity" />
+        <activity android:name="com.wondersgroup.special.activity.ManageActivity" />
+        <activity android:name="com.wondersgroup.special.activity.ManageListActivity" />
+        <activity android:name="com.wondersgroup.special.activity.VoteActivity" />
+        <activity android:name="com.wondersgroup.special.activity.VoteListActivity" />
+        <activity android:name="com.wondersgroup.special.activity.EntPermitDetailActivity" />
+        <activity android:name="com.wondersgroup.special.homepage.HomeDataActivity" />
+        <activity android:name="com.wondersgroup.special.homepage.EmergentActivity" />
+        <activity android:name="com.wondersgroup.special.homepage.PlaceActivity" />
+        <activity android:name="com.wondersgroup.special.homepage.TotalEquipmentActivity" />
+        <activity android:name="com.wondersgroup.special.homepage.EquipmentOverviewActivity" />
+        <activity android:name="com.wondersgroup.special.activity.BDMapActivity" />
+        <activity android:name="com.wondersgroup.special.activity.QueryRecordActivity" />
+        <activity android:name="com.wondersgroup.special.activity.RecordActivity" />
+        <activity android:name="com.wondersgroup.special.activity.unit.CheckUnitDetailActivity" />
+        <activity android:name="com.wondersgroup.special.activity.VoteDetailActivity" />
+        <activity android:name="com.wondersgroup.special.archive.RoutineActivity" />
+        <activity android:name="com.wondersgroup.special.archive.ArchiveDetailActivity" />
+        <activity android:name="com.wondersgroup.special.archive.CheckActivity" />
+        <activity android:name="com.wondersgroup.special.activity.EquipmentBaseInfoActivity"/>
+    </application>
+
+</manifest>

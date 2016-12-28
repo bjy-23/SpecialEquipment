@@ -1,0 +1,21 @@
+package com.wondersgroup.special.activity;
+
+import android.os.Bundle;
+
+import com.wondersgroup.special.R;
+import com.wondersgroup.special.widget.BaseRecyclerView;
+
+public class EntPermitDetailActivity extends BaseActivity {
+    private BaseRecyclerView mRecyclerView;
+
+    @Override
+    protected void initView() {
+        setContentView(R.layout.activity_ent_permit_detail);
+        mRecyclerView = (BaseRecyclerView) findViewById(R.id.recycler);
+    }
+
+    @Override
+    protected void initData(Bundle savedInstanceState) {
+
+    }
+}

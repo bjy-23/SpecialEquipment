@@ -1,0 +1,77 @@
+package com.wondersgroup.special.entity;
+
+import java.io.Serializable;
+import java.util.List;
+
+/**
+ * Created by chan on 12/6/16.
+ */
+
+public class UseListResult extends BaseListResult {
+    private List<UseList> resultList;
+
+    public List<UseList> getResultList() {
+        return resultList;
+    }
+
+    public void setResultList(List<UseList> resultList) {
+        this.resultList = resultList;
+    }
+
+    public static class UseList implements Serializable {
+        private String unitCode;
+        private String unitName;
+        private String unitProperty;
+        private String unitType;
+        private String unitAddress;
+        private String unitPhone;
+
+        public String getUnitCode() {
+            return unitCode;
+        }
+
+        public void setUnitCode(String unitCode) {
+            this.unitCode = unitCode;
+        }
+
+        public String getUnitName() {
+            return unitName;
+        }
+
+        public void setUnitName(String unitName) {
+            this.unitName = unitName;
+        }
+
+        public String getUnitProperty() {
+            return unitProperty;
+        }
+
+        public void setUnitProperty(String unitProperty) {
+            this.unitProperty = unitProperty;
+        }
+
+        public String getUnitType() {
+            return unitType;
+        }
+
+        public void setUnitType(String unitType) {
+            this.unitType = unitType;
+        }
+
+        public String getUnitAddress() {
+            return unitAddress;
+        }
+
+        public void setUnitAddress(String unitAddress) {
+            this.unitAddress = unitAddress;
+        }
+
+        public String getUnitPhone() {
+            return unitPhone;
+        }
+
+        public void setUnitPhone(String unitPhone) {
+            this.unitPhone = unitPhone;
+        }
+    }
+}

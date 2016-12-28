@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_category_unit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.wondersgroup.special.activity.CategoryUnitActivity">
+
+    <TextView
+        android:id="@+id/overview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:paddingBottom="@dimen/margin_module"
+        android:paddingLeft="@dimen/margin_module"
+        android:paddingTop="@dimen/margin_module"
+        android:text="数据概览"
+        android:textSize="@dimen/font_caption" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/relative_unit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/indicator_right_padding">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_module"
+                        android:text="从业单位"
+                        android:textColor="@color/text_littte_black"
+                        android:textSize="@dimen/font_body" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/margin_module"
+                        android:drawableRight="@mipmap/icon_arrow_right"
+                        android:textColor="@color/text_grey"
+                        android:textSize="@dimen/font_caption" />
+                </RelativeLayout>
+
+                <include layout="@layout/subtitle_divide_line_bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/statistics"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@mipmap/cate_boiler_category"
+                        android:drawablePadding="@dimen/indicator_internal_padding"
+                        android:text="从业单位统计"
+                        android:textColor="@color/text_grey"
+                        android:textSize="@dimen/font_caption" />
+
+                    <TextView
+                        android:id="@+id/permit_statistics"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@mipmap/cate_boiler_area"
+                        android:drawablePadding="@dimen/indicator_internal_padding"
+                        android:text="生产单位许可统计"
+                        android:textColor="@color/text_grey"
+                        android:textSize="@dimen/font_caption" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/growth"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@mipmap/cate_boiler_fuel"
+                        android:drawablePadding="@dimen/indicator_internal_padding"
+                        android:text="从业单位增长情况"
+                        android:textColor="@color/text_grey"
+                        android:textSize="@dimen/font_caption" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/text_grey"
+                        android:textSize="@dimen/font_caption" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,45 @@
+package com.wondersgroup.special.archive;
+
+import android.os.Bundle;
+import android.view.View;
+import android.widget.TextView;
+
+import com.wondersgroup.special.R;
+import com.wondersgroup.special.activity.BaseActivity;
+
+/**
+ * 检验档案
+ */
+public class CheckActivity extends BaseActivity {
+    private View mBaseInfo, mRecordInfo;
+
+    @Override
+    protected void initView() {
+        setContentView(R.layout.activity_check);
+        mTitle.setText("检验档案");
+        mBaseInfo = findViewById(R.id.base_info);
+        ((TextView) mBaseInfo.findViewById(R.id.text)).setText("基本信息");
+        mBaseInfo.setOnClickListener(this);
+        mRecordInfo = findViewById(R.id.record_info);
+        ((TextView) mRecordInfo.findViewById(R.id.text)).setText("检验记录");
+        mRecordInfo.setOnClickListener(this);
+    }
+
+    @Override
+    protected void initData(Bundle savedInstanceState) {
+
+    }
+
+    @Override
+    public void onClick(View v) {
+        super.onClick(v);
+        switch (v.getId()){
+            case R.id.base_info:
+                break;
+            case R.id.record_info:
+                break;
+            default:
+                break;
+        }
+    }
+}

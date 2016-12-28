@@ -1,0 +1,77 @@
+package com.wondersgroup.special.entity;
+
+import java.io.Serializable;
+import java.util.List;
+
+/**
+ * Created by root on 12/1/16.
+ */
+
+public class VoteListResult extends BaseListResult {
+    private List<VoteList> resultList;
+
+    public List<VoteList> getResultList() {
+        return resultList;
+    }
+
+    public void setResultList(List<VoteList> resultList) {
+        this.resultList = resultList;
+    }
+
+    public static class VoteList implements Serializable {
+        private String uuid;
+        private String unitName;
+        private String busiDate;
+        private String busiPerson;
+        private String busiFrom;
+        private String intercedeResult;
+
+        public String getUuid() {
+            return uuid;
+        }
+
+        public void setUuid(String uuid) {
+            this.uuid = uuid;
+        }
+
+        public String getUnitName() {
+            return unitName;
+        }
+
+        public void setUnitName(String unitName) {
+            this.unitName = unitName;
+        }
+
+        public String getBusiDate() {
+            return busiDate;
+        }
+
+        public void setBusiDate(String busiDate) {
+            this.busiDate = busiDate;
+        }
+
+        public String getBusiPerson() {
+            return busiPerson;
+        }
+
+        public void setBusiPerson(String busiPerson) {
+            this.busiPerson = busiPerson;
+        }
+
+        public String getBusiFrom() {
+            return busiFrom;
+        }
+
+        public void setBusiFrom(String busiFrom) {
+            this.busiFrom = busiFrom;
+        }
+
+        public String getIntercedeResult() {
+            return intercedeResult;
+        }
+
+        public void setIntercedeResult(String intercedeResult) {
+            this.intercedeResult = intercedeResult;
+        }
+    }
+}

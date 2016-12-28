@@ -1,0 +1,86 @@
+package com.wondersgroup.special.entity;
+
+import java.io.Serializable;
+import java.util.List;
+
+/**
+ * Created by root on 12/5/16.
+ */
+
+public class CheckUnitListResult extends BaseListResult {
+    private List<CheckList> resultList;
+
+    public List<CheckList> getResultList() {
+        return resultList;
+    }
+
+    public void setResultList(List<CheckList> resultList) {
+        this.resultList = resultList;
+    }
+
+    public static class CheckList implements Serializable{
+        private String uuid;
+        private String organName;
+        private String organSocialCode;
+        private String organAddress;
+        private String organCode;
+        private String personScale;
+        private String organProperty;
+
+        public String getUuid() {
+            return uuid;
+        }
+
+        public void setUuid(String uuid) {
+            this.uuid = uuid;
+        }
+
+        public String getOrganName() {
+            return organName;
+        }
+
+        public void setOrganName(String organName) {
+            this.organName = organName;
+        }
+
+        public String getOrganSocialCode() {
+            return organSocialCode;
+        }
+
+        public void setOrganSocialCode(String organSocialCode) {
+            this.organSocialCode = organSocialCode;
+        }
+
+        public String getOrganAddress() {
+            return organAddress;
+        }
+
+        public void setOrganAddress(String organAddress) {
+            this.organAddress = organAddress;
+        }
+
+        public String getOrganCode() {
+            return organCode;
+        }
+
+        public void setOrganCode(String organCode) {
+            this.organCode = organCode;
+        }
+
+        public String getPersonScale() {
+            return personScale;
+        }
+
+        public void setPersonScale(String personScale) {
+            this.personScale = personScale;
+        }
+
+        public String getOrganProperty() {
+            return organProperty;
+        }
+
+        public void setOrganProperty(String organProperty) {
+            this.organProperty = organProperty;
+        }
+    }
+}

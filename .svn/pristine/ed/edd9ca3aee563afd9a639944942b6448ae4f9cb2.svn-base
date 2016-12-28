@@ -1,0 +1,28 @@
+package com.wondersgroup.special.entity;
+
+import java.io.Serializable;
+
+/**
+ * Created by bjy on 2016/12/6.
+ */
+
+public class UnitUnitModel implements Serializable {
+    private String unitUnitName;
+    private String unitUnitAddress;
+
+    public String getUnitUnitAddress() {
+        return unitUnitAddress;
+    }
+
+    public void setUnitUnitAddress(String unitUnitAddress) {
+        this.unitUnitAddress = unitUnitAddress;
+    }
+
+    public String getUnitUnitName() {
+        return unitUnitName;
+    }
+
+    public void setUnitUnitName(String unitUnitName) {
+        this.unitUnitName = unitUnitName;
+    }
+}

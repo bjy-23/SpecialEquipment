@@ -1,0 +1,72 @@
+package com.wondersgroup.special.adapter;
+
+import android.content.Context;
+import android.support.v7.widget.RecyclerView;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.TextView;
+
+import com.wondersgroup.special.R;
+import com.wondersgroup.special.entity.EmployListResult;
+
+import java.util.List;
+
+/**
+ * Created by root on 11/3/16.
+ */
+
+public class EmploymentAdapter extends RecyclerView.Adapter<EmploymentAdapter.ViewHolder> {
+    private LayoutInflater inflater;
+    private Context context;
+    private List<EmployListResult.EmployList> items;
+
+    public EmploymentAdapter(Context context, List<EmployListResult.EmployList> items) {
+        inflater = LayoutInflater.from(context);
+        this.items = items;
+        this.context = context;
+    }
+
+    @Override
+    public EmploymentAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        return new ViewHolder(inflater.inflate(R.layout.item_employment_list, parent, false));
+    }
+
+    public void addItems(List<EmployListResult.EmployList> data) {
+        if (null != items && data.size() != 0) {
+            items.addAll(data);
+            notifyDataSetChanged();
+        }
+    }
+
+    public EmployListResult.EmployList getItem(int position) {
+        return items.get(position);
+    }
+
+
+    @Override
+    public void onBindViewHolder(EmploymentAdapter.ViewHolder holder, int position) {
+        holder.mEmploymentName.setText(items.get(position).getName());
+        holder.mIdCode.setText(String.format(context.getString(R.string.item_id_code), items.get(position).getCardId()));
+        holder.mTheNo.setText("许可类型："+items.get(position).getCertType());
+        holder.mEmploymentUnit.setText(String.format(context.getString(R.string.employment_unit), items.get(position).getUnitName()));
+    }
+
+    @Override
+    public int getItemCount() {
+        return items.size();
+    }
+
+    class ViewHolder extends RecyclerView.ViewHolder {
+        private TextView mEmploymentName, mIdCode, mTheNo, mEmploymentUnit, mEntAddress;
+
+        public ViewHolder(View itemView) {
+            super(itemView);
+            mEmploymentName = (TextView) itemView.findViewById(R.id.employment_name);
+            mIdCode = (TextView) itemView.findViewById(R.id.id_code);
+            mTheNo = (TextView) itemView.findViewById(R.id.the_no);
+            mEmploymentUnit = (TextView) itemView.findViewById(R.id.employment_unit);
+            mEntAddress = (TextView) itemView.findViewById(R.id.ent_address);
+        }
+    }
+}

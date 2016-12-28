@@ -1,0 +1,69 @@
+package com.wondersgroup.special.entity;
+
+import java.io.Serializable;
+import java.util.List;
+
+/**
+ * Created by root on 12/1/16.
+ */
+
+public class EquipmentListResult extends BaseListResult {
+
+    private List<ResultList> resultList;
+
+    public List<ResultList> getResultList() {
+        return resultList;
+    }
+
+    public void setResultList(List<ResultList> resultList) {
+        this.resultList = resultList;
+    }
+
+    public static class ResultList implements Serializable{
+        private String deviceName;
+        private String deviceType;
+        private String deviceNumber;
+        private String useCerNum;
+        private String deviceAddress;
+
+        public String getDeviceName() {
+            return deviceName;
+        }
+
+        public void setDeviceName(String deviceName) {
+            this.deviceName = deviceName;
+        }
+
+        public String getDeviceType() {
+            return deviceType;
+        }
+
+        public void setDeviceType(String deviceType) {
+            this.deviceType = deviceType;
+        }
+
+        public String getDeviceNumber() {
+            return deviceNumber;
+        }
+
+        public void setDeviceNumber(String deviceNumber) {
+            this.deviceNumber = deviceNumber;
+        }
+
+        public String getUseCerNum() {
+            return useCerNum;
+        }
+
+        public void setUseCerNum(String useCerNum) {
+            this.useCerNum = useCerNum;
+        }
+
+        public String getDeviceAddress() {
+            return deviceAddress;
+        }
+
+        public void setDeviceAddress(String deviceAddress) {
+            this.deviceAddress = deviceAddress;
+        }
+    }
+}

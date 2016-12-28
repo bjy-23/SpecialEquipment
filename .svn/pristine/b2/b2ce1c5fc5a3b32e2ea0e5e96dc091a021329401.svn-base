@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_routine"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.wondersgroup.special.archive.RoutineActivity">
+
+    <include
+        android:id="@+id/base_info"
+        layout="@layout/layout_info" />
+
+    <include layout="@layout/subtitle_divide_line_bold" />
+
+    <include
+        android:id="@+id/check_overview"
+        layout="@layout/layout_info" />
+
+    <include layout="@layout/subtitle_divide_line_bold" />
+
+    <include
+        android:id="@+id/check_situation"
+        layout="@layout/layout_info" />
+
+    <include layout="@layout/subtitle_divide_line_bold" />
+
+    <include
+        android:id="@+id/check_content"
+        layout="@layout/layout_info" />
+
+    <include layout="@layout/subtitle_divide_line_bold" />
+
+    <include
+        android:id="@+id/code_book"
+        layout="@layout/layout_info" />
+
+    <include layout="@layout/subtitle_divide_line_bold" />
+
+    <include
+        android:id="@+id/record_info"
+        layout="@layout/layout_info" />
+
+    <include layout="@layout/subtitle_divide_line_bold" />
+
+</LinearLayout>

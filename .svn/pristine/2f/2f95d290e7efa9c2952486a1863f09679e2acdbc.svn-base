@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/workspace/SpecialEquipment/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
+        <dex dex="/Users/workspace/SpecialEquipment/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-23.4.0_9e6cd43f4ad950062c83cd86e524dbbca4298526.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/workspace/SpecialEquipment/app/libs/okhttputils-2_4_1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="24e4c1fc13121896309ed2cb5d34611305389050">
+        <dex dex="/Users/workspace/SpecialEquipment/app/build/intermediates/pre-dexed/debug/okhttputils-2_4_1_e7a9d183ca35193f076f6c769d8dfa77092fc6d2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/private/var/root/.gradle/caches/modules-2/files-2.1/com.nineoldandroids/library/2.4.0/e9b63380f3a242dbdbf103a2355ad7e43bad17cb/library-2.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="/Users/workspace/SpecialEquipment/app/build/intermediates/pre-dexed/debug/library-2.4.0_92895a64c168ed99263359e72deec7b5117a1ed2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/private/var/root/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.6.0/98476622f10715998eacf9240d6b479f12c66143/okio-1.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="98476622f10715998eacf9240d6b479f12c66143">
+        <dex dex="/Users/workspace/SpecialEquipment/app/build/intermediates/pre-dexed/debug/okio-1.6.0_c64ff2a3609d997d3c69cb2eb88e40d3661bee64.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/workspace/SpecialEquipment/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
+        <dex dex="/Users/workspace/SpecialEquipment/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-23.4.0_9e6cd43f4ad950062c83cd86e524dbbca4298526.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/workspace/SpecialEquipment/app/build/intermediates/exploded-aar/com.github.vajro/MaterialDesignLibrary/1.6/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="b083f9ed76344c2f2b227c56d597f6d08d3fefc8">
+        <dex dex="/Users/workspace/SpecialEquipment/app/build/intermediates/pre-dexed/debug/com.github.vajro-MaterialDesignLibrary-1.6_11e20b91f015affee6bb3c01a93a9460f2e8ac40.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/private/var/root/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.6.0/98476622f10715998eacf9240d6b479f12c66143/okio-1.6.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="98476622f10715998eacf9240d6b479f12c66143">
+        <dex dex="/Users/workspace/SpecialEquipment/app/build/intermediates/pre-dexed/debug/okio-1.6.0_c64ff2a3609d997d3c69cb2eb88e40d3661bee64.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/workspace/SpecialEquipment/app/build/intermediates/exploded-aar/com.github.vajro/MaterialDesignLibrary/1.6/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="b083f9ed76344c2f2b227c56d597f6d08d3fefc8">
+        <dex dex="/Users/workspace/SpecialEquipment/app/build/intermediates/pre-dexed/debug/com.github.vajro-MaterialDesignLibrary-1.6_11e20b91f015affee6bb3c01a93a9460f2e8ac40.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/workspace/SpecialEquipment/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="/Users/workspace/SpecialEquipment/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-23.4.0_f12237537c1350954873ce8539a8bfa78801d5dc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/workspace/SpecialEquipment/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="/Users/workspace/SpecialEquipment/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.4.0_1a70a4c66c82a2db81566b0afd36b75a8578161d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/chen/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.4.0/support-annotations-23.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="/Users/workspace/SpecialEquipment/app/build/intermediates/pre-dexed/debug/support-annotations-23.4.0_d5734448c8faaa256136c0d46090bcfbd74ca16c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/workspace/SpecialEquipment/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="/Users/workspace/SpecialEquipment/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-23.4.0_f12237537c1350954873ce8539a8bfa78801d5dc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/workspace/SpecialEquipment/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="/Users/workspace/SpecialEquipment/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.4.0_1a70a4c66c82a2db81566b0afd36b75a8578161d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/chen/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.4.0/support-annotations-23.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="/Users/workspace/SpecialEquipment/app/build/intermediates/pre-dexed/debug/support-annotations-23.4.0_d5734448c8faaa256136c0d46090bcfbd74ca16c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/workspace/SpecialEquipment/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="/Users/workspace/SpecialEquipment/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.4.0_95ed609f15c568a6b4f628254e0dfebb4e2f7990.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/workspace/SpecialEquipment/app/build/intermediates/exploded-aar/com.github.PhilJay/MPAndroidChart-Realm/v2.0.2/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="4591ef46473196a30637ed034018002a462e40ba">
+        <dex dex="/Users/workspace/SpecialEquipment/app/build/intermediates/pre-dexed/debug/com.github.PhilJay-MPAndroidChart-Realm-v2.0.2_bd6ef7fa19a2e11eef5bb2d9b97f53cf7ab15b94.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/workspace/SpecialEquipment/app/build/intermediates/exploded-aar/com.github.PhilJay/MPAndroidChart-Realm/v2.0.2/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="4591ef46473196a30637ed034018002a462e40ba">
+        <dex dex="/Users/workspace/SpecialEquipment/app/build/intermediates/pre-dexed/debug/com.github.PhilJay-MPAndroidChart-Realm-v2.0.2_bd6ef7fa19a2e11eef5bb2d9b97f53cf7ab15b94.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/workspace/SpecialEquipment/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="/Users/workspace/SpecialEquipment/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.4.0_95ed609f15c568a6b4f628254e0dfebb4e2f7990.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/private/var/root/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.2.0/f7873a2ebde246a45c2a8d6f3247108b4c88a879/okhttp-3.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="f7873a2ebde246a45c2a8d6f3247108b4c88a879">
+        <dex dex="/Users/workspace/SpecialEquipment/app/build/intermediates/pre-dexed/debug/okhttp-3.2.0_05fdafa96b25f9c3a18f277595bd9023c3e1d45e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/workspace/SpecialEquipment/app/libs/universal-image-loader-1.9.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="a85588bec3e2c4584d593d3f15df1677321bca72">
+        <dex dex="/Users/workspace/SpecialEquipment/app/build/intermediates/pre-dexed/debug/universal-image-loader-1.9.3_7c1b10363b496cceba623c51fc80bfb64f9919fc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Applications/Android Studio.app/Contents/gradle/m2repository/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="a60a5e993c98c864010053cb901b7eab25306568">
+        <dex dex="/Users/workspace/SpecialEquipment/app/build/intermediates/pre-dexed/debug/gson-2.2.4_d0ce76b63ce905fbab3c5d385c8e1b8692010f19.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/workspace/SpecialEquipment/app/build/intermediates/exploded-aar/SpecialEquipment/MPChartLibrary/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="2c0972aa35bddf72005ce6ab82cba018ee22814b">
+        <dex dex="/Users/workspace/SpecialEquipment/app/build/intermediates/pre-dexed/debug/SpecialEquipment-MPChartLibrary-unspecified_947974844dd1a524648eb6443e1154ccbb8bb1f9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/workspace/SpecialEquipment/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="/Users/workspace/SpecialEquipment/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-23.4.0_d416b36a0c121395b6b8fbe86979b3eb4c47f508.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/private/var/root/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.2.0/f7873a2ebde246a45c2a8d6f3247108b4c88a879/okhttp-3.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="f7873a2ebde246a45c2a8d6f3247108b4c88a879">
+        <dex dex="/Users/workspace/SpecialEquipment/app/build/intermediates/pre-dexed/debug/okhttp-3.2.0_05fdafa96b25f9c3a18f277595bd9023c3e1d45e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/workspace/SpecialEquipment/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="/Users/workspace/SpecialEquipment/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-23.4.0_d416b36a0c121395b6b8fbe86979b3eb4c47f508.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Applications/Android Studio.app/Contents/gradle/m2repository/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="a60a5e993c98c864010053cb901b7eab25306568">
+        <dex dex="/Users/workspace/SpecialEquipment/app/build/intermediates/pre-dexed/debug/gson-2.2.4_d0ce76b63ce905fbab3c5d385c8e1b8692010f19.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/workspace/SpecialEquipment/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/libs/internal_impl-23.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="/Users/workspace/SpecialEquipment/app/build/intermediates/pre-dexed/debug/internal_impl-23.4.0_e1ef163994f4f2898cdd10537aa0d4b7b1d77c8a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/workspace/SpecialEquipment/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/libs/internal_impl-23.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="/Users/workspace/SpecialEquipment/app/build/intermediates/pre-dexed/debug/internal_impl-23.4.0_e1ef163994f4f2898cdd10537aa0d4b7b1d77c8a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/workspace/SpecialEquipment/app/libs/universal-image-loader-1.9.3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="a85588bec3e2c4584d593d3f15df1677321bca72">
+        <dex dex="/Users/workspace/SpecialEquipment/app/build/intermediates/pre-dexed/debug/universal-image-loader-1.9.3_7c1b10363b496cceba623c51fc80bfb64f9919fc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/workspace/SpecialEquipment/app/libs/okhttputils-2_4_1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="24e4c1fc13121896309ed2cb5d34611305389050">
+        <dex dex="/Users/workspace/SpecialEquipment/app/build/intermediates/pre-dexed/debug/okhttputils-2_4_1_e7a9d183ca35193f076f6c769d8dfa77092fc6d2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/private/var/root/.gradle/caches/modules-2/files-2.1/com.nineoldandroids/library/2.4.0/e9b63380f3a242dbdbf103a2355ad7e43bad17cb/library-2.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="/Users/workspace/SpecialEquipment/app/build/intermediates/pre-dexed/debug/library-2.4.0_92895a64c168ed99263359e72deec7b5117a1ed2.jar" />
+    </item>
+
+</items>

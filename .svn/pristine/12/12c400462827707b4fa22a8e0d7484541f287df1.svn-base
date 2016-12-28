@@ -1,0 +1,55 @@
+package com.wondersgroup.special.adapter;
+
+import android.content.Context;
+import android.support.v7.widget.RecyclerView;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import com.wondersgroup.special.R;
+
+/**
+ * Created by chan on 11/25/16.
+ */
+
+public class PersonPermitAdapter extends RecyclerView.Adapter {
+    private Context context;
+    private LayoutInflater inflater;
+
+    public PersonPermitAdapter(Context context) {
+        this.context = context;
+        inflater = LayoutInflater.from(context);
+    }
+
+    @Override
+    public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        return new PersonPermitAdapter.ViewHolder(inflater.inflate(R.layout.item_person_permit, parent, false));
+    }
+
+
+    @Override
+    public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
+    }
+
+    @Override
+    public int getItemCount() {
+        return 2;
+    }
+
+    class ViewHolder extends RecyclerView.ViewHolder {
+        private TextView mPermitName, mPermitType, mName, mIssueDate, mValidityDate;
+        private ImageView avatar;
+
+        public ViewHolder(View itemView) {
+            super(itemView);
+            mPermitName = (TextView) itemView.findViewById(R.id.permit_name);
+            mPermitType = (TextView) itemView.findViewById(R.id.permit_type);
+            mName = (TextView) itemView.findViewById(R.id.name);
+            mIssueDate = (TextView) itemView.findViewById(R.id.issue_date);
+            mValidityDate = (TextView) itemView.findViewById(R.id.validity_date);
+            avatar = (ImageView) itemView.findViewById(R.id.avatar);
+        }
+    }
+}

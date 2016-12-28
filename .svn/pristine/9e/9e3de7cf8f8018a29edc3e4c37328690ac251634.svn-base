@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tv1"
+            style="@style/record_item_1" />
+
+        <TextView
+            android:id="@+id/tv2"
+            style="@style/record_item_2" />
+
+        <TextView
+            android:id="@+id/tv3"
+            style="@style/record_item_2" />
+
+        <TextView
+            android:id="@+id/tv4"
+            style="@style/record_item_2" />
+
+        <TextView
+            android:id="@+id/tv5"
+            style="@style/record_item_2"
+            android:layout_marginBottom="10dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/margin_module"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/relative_basic_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/indicator_right_padding"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/indicator_right_padding">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="许可基本信息"
+                android:textColor="@color/text_grey"
+                android:textSize="@dimen/font_caption" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/icon_arrow_right" />
+        </RelativeLayout>
+
+        <include layout="@layout/subtitle_divide_line_bold" />
+
+        <RelativeLayout
+            android:id="@+id/relative_permit_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/indicator_right_padding"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/indicator_right_padding">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="核准项目列表"
+                android:textColor="@color/text_grey"
+                android:textSize="@dimen/font_caption" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/icon_arrow_right" />
+        </RelativeLayout>
+
+        <include layout="@layout/subtitle_divide_line_bold" />
+    </LinearLayout>
+</LinearLayout>

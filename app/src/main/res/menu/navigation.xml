@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/add"
+        android:icon="@mipmap/icon_home_unselected"
+        android:title="call" />
+    <item
+        android:id="@+id/delete"
+        android:icon="@mipmap/icon_fenlei_unselected"
+        android:title="message" />
+    <item
+        android:id="@+id/setting"
+        android:icon="@mipmap/icon_dangan_unselected"
+        android:title="setting" />
+
+    <item
+        android:id="@+id/me"
+        android:icon="@mipmap/icon_yujing_unselected"
+        android:title="me" />
+    <item
+        android:id="@+id/setting1"
+        android:icon="@mipmap/icon_shezhi_unselected"
+        android:title="me" />
+</menu>

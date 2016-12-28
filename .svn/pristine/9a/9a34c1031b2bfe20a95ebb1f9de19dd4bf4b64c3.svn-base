@@ -1,0 +1,73 @@
+package com.wondersgroup.special.adapter;
+
+import android.content.Context;
+import android.support.v7.widget.RecyclerView;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.TextView;
+
+import com.wondersgroup.special.R;
+import com.wondersgroup.special.entity.CheckUnitListResult;
+
+import java.util.List;
+
+/**
+ * Created by chan on 11/25/16.
+ */
+
+public class CheckUnitAdapter extends RecyclerView.Adapter<CheckUnitAdapter.ViewHolder> {
+    private LayoutInflater inflater;
+    private List<CheckUnitListResult.CheckList> items;
+
+    public CheckUnitAdapter(Context context, List<CheckUnitListResult.CheckList> items) {
+        inflater = LayoutInflater.from(context);
+        this.items = items;
+    }
+
+    @Override
+    public CheckUnitAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        return new CheckUnitAdapter.ViewHolder(inflater.inflate(R.layout.item_check, parent, false));
+    }
+
+    public void addItems(List<CheckUnitListResult.CheckList> data) {
+        if (null != items && data.size() != 0) {
+            items.addAll(data);
+            notifyDataSetChanged();
+        }
+    }
+
+    public CheckUnitListResult.CheckList getItem(int position) {
+        return items.get(position);
+    }
+
+    @Override
+    public void onBindViewHolder(CheckUnitAdapter.ViewHolder holder, int position) {
+        holder.mEntName.setText(items.get(position).getOrganName());
+        holder.mCreditCode.setText("企业信用代码：" + items.get(position).getOrganSocialCode());
+        holder.mOrganCode.setText("行政区划：" + items.get(position).getOrganCode());
+        holder.mPersonScale.setText("单位级别：" + items.get(position).getPersonScale());
+        holder.mOrganProperty.setText("单位性质：" + items.get(position).getOrganProperty());
+        holder.mAddress.setText("单位地址：" + items.get(position).getOrganAddress());
+    }
+
+    @Override
+    public int getItemCount() {
+        return items.size();
+    }
+
+    class ViewHolder extends RecyclerView.ViewHolder {
+        private TextView mEntName, mCreditCode, mOrganCode, mPersonScale, mOrganProperty, mAddress;
+
+        public ViewHolder(View itemView) {
+            super(itemView);
+            mCreditCode = (TextView) itemView.findViewById(R.id.credit_code);
+            mEntName = (TextView) itemView.findViewById(R.id.ent_name);
+            mOrganCode = (TextView) itemView.findViewById(R.id.organ_code);
+            mPersonScale = (TextView) itemView.findViewById(R.id.person_scale);
+            mOrganProperty = (TextView) itemView.findViewById(R.id.organ_property);
+            mAddress = (TextView) itemView.findViewById(R.id.address);
+        }
+    }
+
+}

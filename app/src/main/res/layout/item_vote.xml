@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/indicator_right_padding"
+    android:paddingLeft="@dimen/padding"
+    android:paddingRight="@dimen/padding"
+    android:paddingTop="@dimen/indicator_right_padding">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/ent_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="单位名称"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/font_body" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/credit_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_module"
+        android:text="企业信用代码："
+        android:textColor="@color/text_grey"
+        android:textSize="@dimen/font_caption" />
+
+    <TextView
+        android:id="@+id/object_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_module"
+        android:text="被投诉对象名称："
+        android:textColor="@color/text_grey"
+        android:textSize="@dimen/font_caption" />
+
+    <TextView
+        android:id="@+id/client_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_module"
+        android:text="客户姓名："
+        android:textColor="@color/text_grey"
+        android:textSize="@dimen/font_caption" />
+
+    <TextView
+        android:id="@+id/deal_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_module"
+        android:text="受理日期："
+        android:textColor="@color/text_grey"
+        android:textSize="@dimen/font_caption" />
+
+
+</LinearLayout>

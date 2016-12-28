@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <FrameLayout
+        android:id="@+id/frame_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_group"
+        android:background="@color/white" />
+
+    <LinearLayout
+        android:id="@+id/bottom_group"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_navigation_height"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottom_tab_frame"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:id="@+id/linear_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/image_home"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:contentDescription="@string/home"
+                android:src="@mipmap/icon_home_unselected" />
+
+            <TextView
+                android:id="@+id/text_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/indicator_internal_padding"
+                android:text="@string/home"
+                android:textColor="@color/text_grey"
+                android:textSize="@dimen/font_caption" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_category"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/image_category"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:contentDescription="@string/category"
+                android:src="@mipmap/icon_fenlei_unselected" />
+
+            <TextView
+                android:id="@+id/text_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/indicator_internal_padding"
+                android:text="@string/category"
+                android:textColor="@color/text_grey"
+                android:textSize="@dimen/font_caption" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_archive"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/image_archive"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:contentDescription="@string/archive"
+                android:src="@mipmap/icon_dangan_unselected" />
+
+            <TextView
+                android:id="@+id/text_archive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/indicator_internal_padding"
+                android:text="@string/archive"
+                android:textColor="@color/text_grey"
+                android:textSize="@dimen/font_caption" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_warning"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/image_warning"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:contentDescription="@string/warning"
+                android:src="@mipmap/icon_yujing_unselected" />
+
+            <TextView
+                android:id="@+id/text_warning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/indicator_internal_padding"
+                android:text="@string/warning"
+                android:textColor="@color/text_grey"
+                android:textSize="@dimen/font_caption" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_setting"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/image_setting"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:contentDescription="@string/setting"
+                android:src="@mipmap/icon_shezhi_unselected" />
+
+            <TextView
+                android:id="@+id/text_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/indicator_internal_padding"
+                android:text="@string/setting"
+                android:textColor="@color/text_grey"
+                android:textSize="@dimen/font_caption" />
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

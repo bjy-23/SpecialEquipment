@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wondersgroup.special">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:name=".AppApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="x3rtdW03bThhwFuZUAQNwgfcxxth0PHm" />
+
+        <activity android:name=".activity.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.WelcomeActivity" />
+        <activity android:name=".activity.MainActivity" />
+        <activity android:name=".activity.unit.UseUnitActivity" />
+        <activity android:name=".activity.unit.UseUnitListActivity" />
+        <activity android:name=".activity.unit.UseUnitDetailActivity" />
+        <activity android:name=".activity.unit.ProductUnitActivity" />
+        <activity android:name=".activity.unit.ProductUnitListActivity" />
+        <activity android:name=".activity.unit.ProductUnitDetailActivity" />
+        <activity android:name=".activity.EmploymentActivity" />
+        <activity android:name=".activity.EmploymentListActivity" />
+        <activity android:name=".Employment.activity.EmploymentDetailActivity" />
+        <activity android:name=".activity.EquipmentActivity" />
+        <activity android:name=".activity.EquipmentListActivity" />
+        <activity android:name=".activity.EquipmentDetailActivity" />
+        <activity android:name=".activity.CategoryActivity" />
+        <activity android:name=".activity.AnalysisActivity" />
+        <activity android:name=".activity.OverviewActivity" />
+        <activity android:name=".activity.DetailActivity" />
+        <activity android:name=".activity.unit.CheckUnitActivity" />
+        <activity android:name=".activity.unit.CheckUnitListActivity" />
+        <activity android:name=".activity.EntPermitActivity" />
+        <activity android:name=".activity.EntPermitListActivity" />
+        <activity android:name=".activity.PersonPermitActivity" />
+        <activity android:name=".activity.PersonPermitListActivity" />
+        <activity android:name=".activity.ManageActivity" />
+        <activity android:name=".activity.ManageListActivity" />
+        <activity android:name=".activity.VoteActivity" />
+        <activity android:name=".activity.VoteListActivity" />
+        <activity android:name=".activity.EntPermitDetailActivity" />
+        <activity android:name=".homepage.HomeDataActivity" />
+        <activity android:name=".homepage.EmergentActivity" />
+        <activity android:name=".homepage.PlaceActivity" />
+        <activity android:name=".homepage.TotalEquipmentActivity" />
+        <activity android:name=".homepage.EquipmentOverviewActivity" />
+        <activity android:name=".activity.BDMapActivity" />
+        <activity android:name=".activity.QueryRecordActivity" />
+        <activity android:name=".activity.RecordActivity" />
+        <activity android:name=".activity.unit.CheckUnitDetailActivity" />
+        <activity android:name=".activity.RoutineDetailActivity" />
+        <activity android:name=".archive.ArchiveDetailActivity" />
+        <activity android:name=".activity.CheckDetailActivity" />
+        <activity android:name=".activity.EquipmentBaseInfoActivity" />
+        <activity android:name=".activity.AccidentActivity" />
+        <activity android:name=".activity.AccidentListActivity" />
+        <activity android:name=".activity.CheckActivity" />
+        <activity android:name=".activity.CheckListActivity" />
+        <activity android:name=".activity.RoutineActivity" />
+        <activity android:name=".activity.RoutineListActivity" />
+        <activity android:name=".activity.CaseActivity" />
+        <activity android:name=".activity.CaseListActivity" />
+        <activity android:name=".archive.ArchiveDetailListActivity" />
+        <activity android:name=".activity.BookActivity" />
+       <activity android:name=".Employment.activity.EmploymentExpandActivity" />
+        <activity android:name=".activity.CategoryUnitActivity"></activity>    </application>
+
+</manifest>

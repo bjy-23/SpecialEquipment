@@ -1,0 +1,67 @@
+package com.wondersgroup.special.archive;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.TextView;
+
+import com.wondersgroup.special.R;
+import com.wondersgroup.special.activity.BaseActivity;
+
+/**
+ * 监察档案
+ */
+public class RoutineActivity extends BaseActivity {
+    private View mBaseInfo, mCheckOverview, mCheckSituation, mCheckContent, mCodeBook, mRecordInfo;
+
+    @Override
+    protected void initView() {
+        setContentView(R.layout.activity_routine);
+        mTitle.setText("监察档案");
+        mBaseInfo = findViewById(R.id.base_info);
+        ((TextView) mBaseInfo.findViewById(R.id.text)).setText("基本信息");
+        mBaseInfo.setOnClickListener(this);
+        mCheckOverview = findViewById(R.id.check_overview);
+        ((TextView) mCheckOverview.findViewById(R.id.text)).setText("检查概况");
+        mCheckOverview.setOnClickListener(this);
+        mCheckSituation = findViewById(R.id.check_situation);
+        ((TextView) mCheckSituation.findViewById(R.id.text)).setText("检查情况");
+        mCheckSituation.setOnClickListener(this);
+        mCheckContent = findViewById(R.id.check_content);
+        ((TextView) mCheckContent.findViewById(R.id.text)).setText("检查内容");
+        mCheckContent.setOnClickListener(this);
+        mCodeBook = findViewById(R.id.code_book);
+        ((TextView) mCodeBook.findViewById(R.id.text)).setText("安全监察指令书");
+        mCodeBook.setOnClickListener(this);
+        mRecordInfo = findViewById(R.id.record_info);
+        ((TextView) mRecordInfo.findViewById(R.id.text)).setText("检验记录");
+        mRecordInfo.setOnClickListener(this);
+    }
+
+    @Override
+    protected void initData(Bundle savedInstanceState) {
+
+    }
+
+    @Override
+    public void onClick(View v) {
+        super.onClick(v);
+        switch (v.getId()) {
+            case R.id.base_info:
+                startActivity(new Intent(RoutineActivity.this, ArchiveDetailActivity.class));
+                break;
+            case R.id.check_overview:
+                break;
+            case R.id.check_situation:
+                break;
+            case R.id.check_content:
+                break;
+            case R.id.code_book:
+                break;
+            case R.id.record_info:
+                break;
+            default:
+                break;
+        }
+    }
+}

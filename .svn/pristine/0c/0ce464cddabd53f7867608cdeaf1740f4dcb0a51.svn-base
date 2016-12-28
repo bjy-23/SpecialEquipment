@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/indicator_right_padding"
+    android:paddingLeft="@dimen/padding"
+    android:paddingRight="@dimen/padding"
+    android:paddingTop="@dimen/indicator_right_padding">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/ent_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="万达信息有限公司"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/font_body" />
+
+            <TextView
+                android:id="@+id/warning_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_module"
+                android:text="(重点监控单位)"
+                android:textColor="@color/red"
+                android:textSize="@dimen/font_caption" />
+
+            <TextView
+                android:id="@+id/date_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_module"
+                android:text="(使用单位)"
+                android:textColor="@color/yellow"
+                android:textSize="@dimen/font_caption" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/credit_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_module"
+            android:text="@string/ent_credit_code"
+            android:textColor="@color/text_grey"
+            android:textSize="@dimen/font_caption"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/equipment_registration_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_module"
+            android:text="@string/ent_equipment_registration_number"
+            android:textColor="@color/text_grey"
+            android:textSize="@dimen/font_caption"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/ent_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_module"
+            android:text="@string/ent_type"
+            android:textColor="@color/text_grey"
+            android:textSize="@dimen/font_caption"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/ent_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_module"
+            android:text="@string/ent_address"
+            android:textColor="@color/text_grey"
+            android:textSize="@dimen/font_caption"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_module"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/boiler"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="锅炉："
+                android:textColor="@color/text_grey"
+                android:textSize="@dimen/font_caption" />
+
+            <TextView
+                android:id="@+id/vessel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="压力容器："
+                android:textColor="@color/text_grey"
+                android:textSize="@dimen/font_caption" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_module"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/cylindex"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="气瓶："
+                android:textColor="@color/text_grey"
+                android:textSize="@dimen/font_caption" />
+
+            <TextView
+                android:id="@+id/pipe"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="压力管道："
+                android:textColor="@color/text_grey"
+                android:textSize="@dimen/font_caption" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_module"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/elevator"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="电梯："
+                android:textColor="@color/text_grey"
+                android:textSize="@dimen/font_caption" />
+
+            <TextView
+                android:id="@+id/lifting"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="起重器械："
+                android:textColor="@color/text_grey"
+                android:textSize="@dimen/font_caption" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_module"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/vehicle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="场内车辆："
+                android:textColor="@color/text_grey"
+                android:textSize="@dimen/font_caption" />
+
+            <TextView
+                android:id="@+id/facility"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="游乐设施："
+                android:textColor="@color/text_grey"
+                android:textSize="@dimen/font_caption" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/unit_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="万达信息有限公司"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/font_body" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/unit_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_module"
+            android:text="组织机构代码："
+            android:textColor="@color/text_grey"
+            android:textSize="@dimen/font_caption" />
+
+        <TextView
+            android:id="@+id/unit_property"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_module"
+            android:text="单位性质："
+            android:textColor="@color/text_grey"
+            android:textSize="@dimen/font_caption" />
+
+        <TextView
+            android:id="@+id/unit_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_module"
+            android:text="单位类型："
+            android:textColor="@color/text_grey"
+            android:textSize="@dimen/font_caption" />
+
+        <TextView
+            android:id="@+id/unit_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_module"
+            android:text="单位地址："
+            android:textColor="@color/text_grey"
+            android:textSize="@dimen/font_caption" />
+
+        <TextView
+            android:id="@+id/unit_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_module"
+            android:text="联系电话："
+            android:textColor="@color/text_grey"
+            android:textSize="@dimen/font_caption" />
+    </LinearLayout>
+
+</LinearLayout>

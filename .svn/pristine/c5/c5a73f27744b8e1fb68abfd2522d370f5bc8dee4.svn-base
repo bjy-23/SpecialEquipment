@@ -1,0 +1,131 @@
+package com.wondersgroup.special.activity;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.text.TextUtils;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.TextView;
+
+import com.google.gson.Gson;
+import com.wondersgroup.special.AppApplication;
+import com.wondersgroup.special.R;
+import com.wondersgroup.special.ResponseCallBack;
+import com.wondersgroup.special.constant.Constant;
+import com.wondersgroup.special.constant.Tips;
+import com.wondersgroup.special.constant.UrlConstant;
+import com.wondersgroup.special.entity.UnitPermissionEnitity;
+import com.wondersgroup.special.entity.UnitPermissionResult;
+import com.wondersgroup.special.entity.User;
+import com.wondersgroup.special.utils.PrefUtil;
+import com.wondersgroup.special.utils.Utils;
+import com.zhy.http.okhttp.OkHttpUtils;
+
+import java.util.ArrayList;
+
+import okhttp3.Call;
+import okhttp3.Request;
+
+public class LoginActivity extends BaseActivity {
+    private TextView mButtonLogin;
+    private EditText mEditName;
+    private EditText mEditPassword;
+
+    @Override
+    protected void initView() {
+        Gson gson = new Gson();
+        ArrayList<UnitPermissionEnitity> array = new ArrayList<>();
+        UnitPermissionEnitity enitity = new UnitPermissionEnitity();
+        array.add(enitity);
+        UnitPermissionResult result = new UnitPermissionResult();
+        result.setObject(array);
+        String results = gson.toJson(result);
+        setContentView(R.layout.activity_login);
+        setToolBarVisible(false);
+        mButtonLogin = (TextView) this.findViewById(R.id.button_login);
+        mEditName = (EditText) this.findViewById(R.id.edit_name);
+        mEditPassword = (EditText) this.findViewById(R.id.edit_password);
+    }
+
+    @Override
+    protected void initData(Bundle savedInstanceState) {
+        String name = PrefUtil.getString(AppApplication.getInstance(), Constant.Extra.NAME);
+        if (!TextUtils.isEmpty(name)) {
+            mEditName.setText(name);
+            mEditName.setSelection(name.length());
+        }
+        mButtonLogin.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                login();
+            }
+        });
+    }
+
+    /**
+     * 验证用户名
+     *
+     * @return
+     */
+    private boolean validateName() {
+        String name = mEditName.getText().toString().trim();
+        if (TextUtils.isEmpty(name)) {
+            showMsg(Tips.USER_NAME_CAN_NOT_BE_EMPTY);
+            return false;
+        }
+        return true;
+    }
+
+    /**
+     * 验证密码
+     *
+     * @return
+     */
+    private boolean validatePwd() {
+        String password = mEditPassword.getText().toString().trim();
+        if (TextUtils.isEmpty(password)) {
+            showMsg(Tips.PASSWORD_CAN_NOT_BE_EMPTY);
+            return false;
+        }
+        return true;
+    }
+
+    private void login() {
+        String name = mEditName.getText().toString().trim();
+        String password = mEditPassword.getText().toString().trim();
+        if (validateName() && validatePwd()) {
+            String url = UrlConstant.LOGIN + "?portal_login_loginName=" + name + "&portal_login_password=" + password;
+            OkHttpUtils.post().url(url).addParams("phoneNo", Utils.getDevicesSN()).build().execute(new ResponseCallBack<User>() {
+                @Override
+                public void onBefore(Request request) {
+                    super.onBefore(request);
+                    showLoadingDialog();
+                }
+
+                @Override
+                public void onAfter() {
+                    super.onAfter();
+                    dismissLoadingDialog();
+                }
+
+                @Override
+                public void onError(Call call, Exception e) {
+                    super.onError(call, e);
+                    showMsg(e.getMessage());
+                }
+
+                @Override
+                public void onResponse(User t) {
+                    super.onResponse(t);
+                    if (null != t) {
+                        Utils.saveUser(t);
+                        PrefUtil.putString(AppApplication.getInstance(), Constant.Extra.NAME, mEditName.getText().toString().trim());
+                        startActivity(new Intent(LoginActivity.this, MainActivity.class));
+                        finish();
+                    }
+                }
+            });
+        }
+    }
+}

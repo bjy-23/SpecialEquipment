@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/activity_equipment_base_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        tools:context="com.wondersgroup.special.activity.EquipmentBaseInfoActivity">
+
+        <include
+            android:id="@+id/reg_info"
+            layout="@layout/layout_info" />
+
+        <include layout="@layout/subtitle_divide_line_bold" />
+
+        <include
+            android:id="@+id/ident_info"
+            layout="@layout/layout_info" />
+
+        <include layout="@layout/subtitle_divide_line_bold" />
+
+        <include
+            android:id="@+id/design_info"
+            layout="@layout/layout_info" />
+
+        <include layout="@layout/subtitle_divide_line_bold" />
+
+        <include
+            android:id="@+id/product_info"
+            layout="@layout/layout_info" />
+
+        <include layout="@layout/subtitle_divide_line_bold" />
+
+        <include
+            android:id="@+id/property_info"
+            layout="@layout/layout_info" />
+
+        <include layout="@layout/subtitle_divide_line_bold" />
+
+        <include
+            android:id="@+id/use_info"
+            layout="@layout/layout_info" />
+
+        <include layout="@layout/subtitle_divide_line_bold" />
+
+        <include
+            android:id="@+id/manage_info"
+            layout="@layout/layout_info" />
+
+        <include layout="@layout/subtitle_divide_line_bold" />
+
+        <include
+            android:id="@+id/safe_info"
+            layout="@layout/layout_info" />
+
+        <include layout="@layout/subtitle_divide_line_bold" />
+
+        <include
+            android:id="@+id/bpvi_info"
+            layout="@layout/layout_info" />
+
+        <include layout="@layout/subtitle_divide_line_bold" />
+
+        <include
+            android:id="@+id/maintenance_info"
+            layout="@layout/layout_info" />
+
+        <include layout="@layout/subtitle_divide_line_bold" />
+
+        <include
+            android:id="@+id/tec_info"
+            layout="@layout/layout_info" />
+
+        <include layout="@layout/subtitle_divide_line_bold" />
+
+        <include
+            android:id="@+id/tec_expa_info"
+            layout="@layout/layout_info" />
+
+        <include layout="@layout/subtitle_divide_line_bold" />
+    </LinearLayout>
+</ScrollView>

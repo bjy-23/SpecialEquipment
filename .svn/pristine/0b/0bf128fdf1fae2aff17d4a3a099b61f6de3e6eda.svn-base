@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_statistics_growth"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.wondersgroup.special.activity.StatisticsGrowthActivity">
+
+    <RelativeLayout
+        android:id="@+id/relative_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/margin_module"
+        android:paddingLeft="@dimen/margin_module"
+        android:paddingTop="@dimen/margin_module">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="分析图"
+            android:textSize="@dimen/font_caption" />
+
+        <LinearLayout
+            android:id="@+id/linear_section"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal"
+            android:paddingRight="@dimen/indicator_right_padding">
+
+            <TextView
+                android:id="@+id/year_section"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/margin_module"
+                android:paddingRight="@dimen/indicator_right_padding"
+                android:textColor="@color/text_grey"
+                android:textSize="@dimen/font_caption" />
+
+            <TextView
+                android:id="@+id/select"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/margin_module"
+                android:paddingRight="@dimen/indicator_right_padding"
+                android:text="筛选"
+                android:textColor="@color/text_grey"
+                android:textSize="@dimen/font_caption" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/chart"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:background="@color/white" />
+</LinearLayout>

@@ -1,0 +1,157 @@
+package com.wondersgroup.pork.fragment;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.support.annotation.Nullable;
+import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
+
+import com.wondersgroup.pork.R;
+import com.wondersgroup.pork.activity.CheckUnitActivity;
+import com.wondersgroup.pork.activity.EmploymentActivity;
+import com.wondersgroup.pork.activity.EntPermitActivity;
+import com.wondersgroup.pork.activity.EquipmentActivity;
+import com.wondersgroup.pork.activity.ManageActivity;
+import com.wondersgroup.pork.activity.PersonPermitActivity;
+import com.wondersgroup.pork.activity.QueryRecordActivity;
+import com.wondersgroup.pork.activity.UseUnitActivity;
+import com.wondersgroup.pork.activity.VoteActivity;
+import com.wondersgroup.pork.archive.RoutineActivity;
+import com.wondersgroup.pork.constant.Constant;
+import com.wondersgroup.pork.constant.Params;
+
+/**
+ * Created by chan on 11/2/16.
+ */
+
+public class ArchiveFragment extends BaseFragment implements View.OnClickListener {
+    private RelativeLayout mRelativeInspectionUnit, mRelativeUseUnit;
+    private RelativeLayout mRelativeEmployment, mRelativeInspectionPerson, mRelativeInspectors, mRelativeNondestructive;
+    private RelativeLayout mRelativeSpecial;
+    private RelativeLayout mRelativeUnitLicense, mRelativePersonLicense, mRelativeUnitArchive,
+            mRelativeAccidentArchive, mRelativeCheckArchive, mRelativeEquipmentLicense,
+            mRelativeRoutineInspection, mRelativeCaseArchive, mRelativeVoteArchive;
+    private View mParentView;
+
+    @Nullable
+    @Override
+    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        return inflater.inflate(R.layout.fragment_archive, container, false);
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        mParentView = getView();
+        ((TextView) mParentView.findViewById(R.id.title)).setText("档案导航");
+        initView();
+        initListener();
+    }
+
+    private void initView() {
+        mRelativeInspectionUnit = (RelativeLayout) mParentView.findViewById(R.id.relative_inspection_unit);
+        mRelativeUseUnit = (RelativeLayout) mParentView.findViewById(R.id.relative_use_unit);
+        mRelativeEmployment = (RelativeLayout) mParentView.findViewById(R.id.relative_employment);
+        mRelativeInspectionPerson = (RelativeLayout) mParentView.findViewById(R.id.relative_inspection_person);
+        mRelativeInspectors = (RelativeLayout) mParentView.findViewById(R.id.relative_inspectors);
+        mRelativeNondestructive = (RelativeLayout) mParentView.findViewById(R.id.relative_nondestructive);
+        mRelativeSpecial = (RelativeLayout) mParentView.findViewById(R.id.relative_special);
+        mRelativeUnitLicense = (RelativeLayout) mParentView.findViewById(R.id.relative_unit_license);
+        mRelativePersonLicense = (RelativeLayout) mParentView.findViewById(R.id.relative_person_license);
+        mRelativeUnitArchive = (RelativeLayout) mParentView.findViewById(R.id.relative_unit_archive);
+        mRelativeAccidentArchive = (RelativeLayout) mParentView.findViewById(R.id.relative_accident_archive);
+        mRelativeCheckArchive = (RelativeLayout) mParentView.findViewById(R.id.relative_check_archive);
+        mRelativeEquipmentLicense = (RelativeLayout) mParentView.findViewById(R.id.relative_equipment_license);
+        mRelativeRoutineInspection = (RelativeLayout) mParentView.findViewById(R.id.relative_routine_inspection);
+        mRelativeCaseArchive = (RelativeLayout) mParentView.findViewById(R.id.relative_case_archive);
+        mRelativeVoteArchive = (RelativeLayout) mParentView.findViewById(R.id.relative_vote_archive);
+    }
+
+    private void initListener() {
+        mRelativeInspectionUnit.setOnClickListener(this);
+        mRelativeUseUnit.setOnClickListener(this);
+        mRelativeEmployment.setOnClickListener(this);
+        mRelativeInspectionPerson.setOnClickListener(this);
+        mRelativeInspectors.setOnClickListener(this);
+        mRelativeNondestructive.setOnClickListener(this);
+        mRelativeSpecial.setOnClickListener(this);
+        mRelativeUnitLicense.setOnClickListener(this);
+        mRelativePersonLicense.setOnClickListener(this);
+        mRelativeUnitArchive.setOnClickListener(this);
+        mRelativeAccidentArchive.setOnClickListener(this);
+        mRelativeCheckArchive.setOnClickListener(this);
+        mRelativeEquipmentLicense.setOnClickListener(this);
+        mRelativeRoutineInspection.setOnClickListener(this);
+        mRelativeCaseArchive.setOnClickListener(this);
+        mRelativeVoteArchive.setOnClickListener(this);
+    }
+
+    @Override
+    public void onClick(View v) {
+        Intent intent = new Intent(getActivity(), QueryRecordActivity.class);
+        Bundle bundle = new Bundle();
+        switch (v.getId()) {
+            case R.id.relative_inspection_unit:
+                startActivity(new Intent(getActivity(), CheckUnitActivity.class));
+                break;
+            case R.id.relative_use_unit:
+                startActivity(new Intent(getActivity(), UseUnitActivity.class));
+                break;
+            case R.id.relative_employment:
+                intent.setClass(getActivity(), EmploymentActivity.class);
+                bundle.putString(Params.EMPLOY_TYPE, Constant.EmployType.EMPLOYMENT);
+                startActivity(intent);
+                break;
+            case R.id.relative_inspection_person:
+                intent.setClass(getActivity(), EmploymentActivity.class);
+                bundle.putString(Params.EMPLOY_TYPE, Constant.EmployType.TEST);
+                startActivity(intent);
+                break;
+            case R.id.relative_inspectors:
+                intent.setClass(getActivity(), EmploymentActivity.class);
+                bundle.putString(Params.EMPLOY_TYPE, Constant.EmployType.INSPECTOR);
+                startActivity(intent);
+                break;
+            case R.id.relative_nondestructive:
+                intent.setClass(getActivity(), EmploymentActivity.class);
+                bundle.putString(Params.EMPLOY_TYPE, Constant.EmployType.NONDESTRUCTIVE);
+                startActivity(intent);
+                break;
+            case R.id.relative_special:
+                startActivity(new Intent(getActivity(), EquipmentActivity.class));
+                break;
+            case R.id.relative_unit_license:
+                intent.putExtra("type", 1);
+                startActivity(intent);
+                break;
+            case R.id.relative_person_license:
+                intent.putExtra("type", 2);
+                startActivity(intent);
+                break;
+            case R.id.relative_unit_archive:
+                intent.putExtra("type", 3);
+                startActivity(intent);
+                break;
+            case R.id.relative_vote_archive:
+                startActivity(new Intent(getActivity(), VoteActivity.class));
+                break;
+            case R.id.relative_accident_archive:
+                break;
+            case R.id.relative_check_archive://检验档案
+                break;
+            case R.id.relative_equipment_license:
+                break;
+            case R.id.relative_routine_inspection://监察档案
+                startActivity(new Intent(getActivity(), RoutineActivity.class));
+                break;
+            case R.id.relative_case_archive:
+                break;
+            default:
+                break;
+        }
+    }
+}

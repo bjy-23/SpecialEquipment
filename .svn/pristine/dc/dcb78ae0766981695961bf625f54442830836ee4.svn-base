@@ -1,0 +1,58 @@
+package com.wondersgroup.special.activity;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.TextView;
+
+import com.wondersgroup.special.R;
+import com.wondersgroup.special.constant.Constant;
+import com.wondersgroup.special.constant.Params;
+import com.wondersgroup.special.entity.VoteListResult;
+
+public class VoteDetailActivity extends BaseActivity {
+    private VoteListResult.VoteList result;
+    private TextView mEntName, mAppealDate, mAppealPerson, mAppealSrc, mAppealResult;
+
+    @Override
+    protected void initView() {
+        setContentView(R.layout.activity_vote_detail);
+        mTitle.setText("投举档案详情");
+        mEntName = (TextView) findViewById(R.id.ent_name);
+        mAppealDate = (TextView) findViewById(R.id.appeal_date);
+        mAppealPerson = (TextView) findViewById(R.id.appeal_person);
+        mAppealSrc = (TextView) findViewById(R.id.appeal_src);
+        mAppealResult = (TextView) findViewById(R.id.appeal_result);
+    }
+
+    @Override
+    protected void initData(Bundle savedInstanceState) {
+        result = (VoteListResult.VoteList) getIntent().getSerializableExtra(Params.DATA);
+        findViewById(R.id.relative_basic_info).setOnClickListener(this);
+        if (null != result) {
+            mEntName.setText(result.getUnitName());
+            mAppealDate.setText(result.getBusiDate());
+            mAppealPerson.setText(result.getBusiPerson());
+            mAppealSrc.setText(result.getBusiFrom());
+            mAppealResult.setText(result.getIntercedeResult());
+        }
+    }
+
+    @Override
+    public void onClick(View v) {
+        super.onClick(v);
+        Intent intent = new Intent();
+        Bundle bundle = new Bundle();
+        bundle.putString("UUID", result.getUuid());
+        switch (v.getId()) {
+            case R.id.relative_basic_info:
+                bundle.putString("INFO", Constant.Info.CHECK_UNIT_INFO);
+                intent.putExtras(bundle);
+                intent.setClass(VoteDetailActivity.this, DetailActivity.class);
+                startActivity(intent);
+                break;
+            default:
+                break;
+        }
+    }
+}

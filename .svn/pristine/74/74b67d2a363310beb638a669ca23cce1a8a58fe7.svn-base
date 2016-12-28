@@ -1,0 +1,142 @@
+[
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/mipmap-xhdpi/icon_equipment_overview.png",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/mipmap-xhdpi/icon_equipment_overview.png"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/mipmap-xhdpi/login_input_bg.png",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/mipmap-xhdpi/login_input_bg.png"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/mipmap-xhdpi/icon_special.png",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/mipmap-xhdpi/icon_special.png"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/mipmap-xhdpi/login_password_icon.png",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/mipmap-xhdpi/login_password_icon.png"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/mipmap-xhdpi/icon_dangan_selected.png",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/mipmap-xhdpi/icon_dangan_selected.png"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/mipmap-xhdpi/icon_place_analysis.png",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/mipmap-xhdpi/icon_place_analysis.png"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/mipmap-xhdpi/icon_yujing_unselected.png",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/mipmap-xhdpi/icon_yujing_unselected.png"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/mipmap-xhdpi/icon_emergent_events.png",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/mipmap-xhdpi/icon_emergent_events.png"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/mipmap-xhdpi/icon_congyedanwei.png",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/mipmap-xhdpi/icon_congyedanwei.png"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/mipmap-xhdpi/icon_more.png",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/mipmap-xhdpi/icon_more.png"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/mipmap-xhdpi/login_username_icon.png",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/mipmap-xhdpi/login_username_icon.png"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/mipmap-xhdpi/icon_dangan_unselected.png",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/mipmap-xhdpi/icon_dangan_unselected.png"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/mipmap-xhdpi/icon_other.png",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/mipmap-xhdpi/icon_other.png"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/mipmap-xhdpi/icon_qujian.png",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/mipmap-xhdpi/icon_qujian.png"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/mipmap-xhdpi/icon_shezhi_unselected.png",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/mipmap-xhdpi/icon_shezhi_unselected.png"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/mipmap-xhdpi/back.png",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/mipmap-xhdpi/back.png"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/mipmap-xhdpi/ic_launcher.png",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/mipmap-xhdpi/icon_unit.png",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/mipmap-xhdpi/icon_unit.png"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/mipmap-xhdpi/icon_fenlei_selected.png",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/mipmap-xhdpi/icon_fenlei_selected.png"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/mipmap-xhdpi/icon_shezhi_selected.png",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/mipmap-xhdpi/icon_shezhi_selected.png"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/mipmap-xhdpi/icon_yujing_selected.png",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/mipmap-xhdpi/icon_yujing_selected.png"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/mipmap-xhdpi/welcome.png",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/mipmap-xhdpi/welcome.png"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/mipmap-xhdpi/icon_tezhongshebei.png",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/mipmap-xhdpi/icon_tezhongshebei.png"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/mipmap-xhdpi/icon_msg.png",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/mipmap-xhdpi/icon_msg.png"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/mipmap-xhdpi/icon_congyerenyuan.png",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/mipmap-xhdpi/icon_congyerenyuan.png"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/mipmap-xhdpi/icon_arrow_right.png",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/mipmap-xhdpi/icon_arrow_right.png"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/mipmap-xhdpi/icon_fenlei_unselected.png",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/mipmap-xhdpi/icon_fenlei_unselected.png"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/mipmap-xhdpi/icon_shiyongdanwei.png",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/mipmap-xhdpi/icon_shiyongdanwei.png"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/mipmap-xhdpi/icon_zonglan.png",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/mipmap-xhdpi/icon_zonglan.png"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/mipmap-xhdpi/login_logo.png",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/mipmap-xhdpi/login_logo.png"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/mipmap-xhdpi/icon_home_unselected.png",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/mipmap-xhdpi/icon_home_unselected.png"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/mipmap-xhdpi/icon_category.png",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/mipmap-xhdpi/icon_category.png"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/mipmap-xhdpi/icon_search.png",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/mipmap-xhdpi/icon_search.png"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/mipmap-xhdpi/icon_person.png",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/mipmap-xhdpi/icon_person.png"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/mipmap-xhdpi/icon_home_selected.png",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/mipmap-xhdpi/icon_home_selected.png"
+    }
+]

@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/margin_module"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relative_basic_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/indicator_right_padding"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/indicator_right_padding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/basic_info"
+            android:textColor="@color/text_grey"
+            android:textSize="@dimen/font_caption" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/icon_arrow_right" />
+    </RelativeLayout>
+
+    <include layout="@layout/subtitle_divide_line_bold" />
+
+    <RelativeLayout
+        android:id="@+id/relative_permit_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/indicator_right_padding"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/indicator_right_padding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="许可信息"
+            android:textColor="@color/text_grey"
+            android:textSize="@dimen/font_caption" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/icon_arrow_right" />
+    </RelativeLayout>
+
+    <include layout="@layout/subtitle_divide_line_bold" />
+
+    <RelativeLayout
+        android:id="@+id/relative_equ_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/indicator_right_padding"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/indicator_right_padding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设备信息"
+            android:textColor="@color/text_grey"
+            android:textSize="@dimen/font_caption" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/icon_arrow_right" />
+    </RelativeLayout>
+
+    <include layout="@layout/subtitle_divide_line_bold" />
+
+    <RelativeLayout
+        android:id="@+id/relative_employ_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/indicator_right_padding"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/indicator_right_padding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="从业人员"
+            android:textColor="@color/text_grey"
+            android:textSize="@dimen/font_caption" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/icon_arrow_right" />
+    </RelativeLayout>
+
+    <include layout="@layout/subtitle_divide_line_bold" />
+
+    <RelativeLayout
+        android:id="@+id/relative_routine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/indicator_right_padding"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/indicator_right_padding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="监察档案"
+            android:textColor="@color/text_grey"
+            android:textSize="@dimen/font_caption" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/icon_arrow_right" />
+    </RelativeLayout>
+
+    <include layout="@layout/subtitle_divide_line_bold" />
+
+    <RelativeLayout
+        android:id="@+id/relative_vote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/indicator_right_padding"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/indicator_right_padding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="投诉举报"
+            android:textColor="@color/text_grey"
+            android:textSize="@dimen/font_caption" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/icon_arrow_right" />
+    </RelativeLayout>
+
+    <include layout="@layout/subtitle_divide_line_bold" />
+
+    <RelativeLayout
+        android:id="@+id/relative_case"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/indicator_right_padding"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/indicator_right_padding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="行政处罚"
+            android:textColor="@color/text_grey"
+            android:textSize="@dimen/font_caption" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/icon_arrow_right" />
+    </RelativeLayout>
+
+    <include layout="@layout/subtitle_divide_line_bold" />
+
+    <RelativeLayout
+        android:id="@+id/relative_accident"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/indicator_right_padding"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/indicator_right_padding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="事故信息"
+            android:textColor="@color/text_grey"
+            android:textSize="@dimen/font_caption" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/icon_arrow_right" />
+    </RelativeLayout>
+
+    <include layout="@layout/subtitle_divide_line_bold" />
+
+    <RelativeLayout
+        android:id="@+id/relative_award"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/indicator_right_padding"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/indicator_right_padding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="获奖情况"
+            android:textColor="@color/text_grey"
+            android:textSize="@dimen/font_caption" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/icon_arrow_right" />
+    </RelativeLayout>
+
+    <include layout="@layout/subtitle_divide_line_bold" />
+
+    <RelativeLayout
+        android:id="@+id/relative_change"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/indicator_right_padding"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/indicator_right_padding"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="变更记录"
+            android:textColor="@color/text_grey"
+            android:textSize="@dimen/font_caption" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/icon_arrow_right" />
+    </RelativeLayout>
+
+    <include
+        layout="@layout/subtitle_divide_line_bold"
+        android:visibility="gone" />
+</LinearLayout>

@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_use_unit_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context="com.wondersgroup.special.activity.unit.UseUnitDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/indicator_right_padding"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/indicator_right_padding"
+        android:paddingLeft="@dimen/padding"
+        android:paddingRight="@dimen/padding"
+        android:paddingTop="@dimen/indicator_right_padding"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/ent_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/equipment_name"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/font_body" />
+
+            <!--<TextView-->
+                <!--android:id="@+id/warning_type"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="@dimen/margin_module"-->
+                <!--android:text="(高危设备)"-->
+                <!--android:textColor="@color/red"-->
+                <!--android:textSize="@dimen/font_caption" />-->
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/equipment_use_unit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding"
+            android:text="@string/equipment_use_unit"
+            android:textColor="@color/text_grey"
+            android:textSize="@dimen/font_caption" />
+
+        <TextView
+            android:id="@+id/equipment_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/indicator_right_padding"
+            android:text="@string/equipment_address"
+            android:textColor="@color/text_grey"
+            android:textSize="@dimen/font_caption" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/indicator_right_padding"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/registration_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/registration_date"
+                android:textColor="@color/text_grey"
+                android:textSize="@dimen/font_caption" />
+
+            <TextView
+                android:id="@+id/equipment_status"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/equipment_status"
+                android:textColor="@color/text_grey"
+                android:textSize="@dimen/font_caption" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/indicator_right_padding"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/latest_inspection_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/latest_inspection_date"
+                android:textColor="@color/text_grey"
+                android:textSize="@dimen/font_caption" />
+
+            <TextView
+                android:id="@+id/next_inspection_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/next_inspection_date"
+                android:textColor="@color/text_grey"
+                android:textSize="@dimen/font_caption" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/indicator_right_padding"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/indicator_right_padding"
+        android:paddingLeft="@dimen/padding"
+        android:paddingRight="@dimen/padding"
+        android:paddingTop="@dimen/indicator_right_padding">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/equipment_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="设备名称"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/font_body" />
+            <TextView
+                android:id="@+id/warning_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_module"
+                android:text="(高危设备)"
+                android:textColor="@color/red"
+                android:textSize="@dimen/font_caption"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/date_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_module"
+                android:text="(超期未检)"
+                android:textColor="@color/yellow"
+                android:textSize="@dimen/font_caption"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_module"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/type"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="设备类型："
+                android:textColor="@color/text_grey"
+                android:textSize="@dimen/font_caption" />
+
+            <TextView
+                android:id="@+id/code"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="设备代码："
+                android:textColor="@color/text_grey"
+                android:textSize="@dimen/font_caption" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_module"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/ping_type"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="设备品类："
+                android:textColor="@color/text_grey"
+                android:textSize="@dimen/font_caption" />
+
+            <TextView
+                android:id="@+id/child"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="设备子类："
+                android:textColor="@color/text_grey"
+                android:textSize="@dimen/font_caption" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/reg_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_module"
+            android:text="设备登记号："
+            android:textColor="@color/text_grey"
+            android:textSize="@dimen/font_caption" />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_module"
+            android:text="设备地址："
+            android:textColor="@color/text_grey"
+            android:textSize="@dimen/font_caption" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/indicator_right_padding"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/device_mark"
+            layout="@layout/layout_info" />
+
+        <include layout="@layout/subtitle_divide_line_bold" />
+
+        <include
+            android:id="@+id/device_product"
+            layout="@layout/layout_info" />
+
+        <include layout="@layout/subtitle_divide_line_bold" />
+
+        <include
+            android:id="@+id/device_design"
+            layout="@layout/layout_info" />
+
+        <include
+            android:id="@+id/design_line"
+            layout="@layout/subtitle_divide_line_bold" />
+
+        <include
+            android:id="@+id/device_property"
+            layout="@layout/layout_info" />
+
+        <include layout="@layout/subtitle_divide_line_bold" />
+
+        <include
+            android:id="@+id/manage_info"
+            layout="@layout/layout_info" />
+
+        <include layout="@layout/subtitle_divide_line_bold" />
+
+        <include
+            android:id="@+id/check_info"
+            layout="@layout/layout_info" />
+
+        <include layout="@layout/subtitle_divide_line_bold" />
+
+        <include
+            android:id="@+id/accident_info"
+            layout="@layout/layout_info" />
+
+        <include layout="@layout/subtitle_divide_line_bold" />
+
+    </LinearLayout>
+</LinearLayout>

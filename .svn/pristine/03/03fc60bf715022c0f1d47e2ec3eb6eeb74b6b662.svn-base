@@ -1,0 +1,761 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_category"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.wondersgroup.special.activity.CategoryActivity">
+
+    <TextView
+        android:id="@+id/overview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:paddingBottom="@dimen/margin_module"
+        android:paddingLeft="@dimen/margin_module"
+        android:paddingTop="@dimen/margin_module"
+        android:text="数据概览"
+        android:textSize="@dimen/font_caption" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/indicator_right_padding">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_module"
+                        android:text="锅炉"
+                        android:textColor="@color/text_littte_black"
+                        android:textSize="@dimen/font_body" />
+
+                    <TextView
+                        android:id="@+id/text_boiler"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/margin_module"
+                        android:text="概览"
+                        android:textColor="@color/text_grey"
+                        android:textSize="@dimen/font_caption" />
+                </RelativeLayout>
+
+                <include layout="@layout/subtitle_divide_line_bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/boiler_category"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="类别分析"
+                        android:textColor="@color/text_grey"
+                        android:textSize="@dimen/font_caption" />
+
+                    <TextView
+                        android:id="@+id/boiler_area"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="使用场所分析"
+                        android:textColor="@color/text_grey"
+                        android:textSize="@dimen/font_caption" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/boiler_fuel"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="燃料种类分析"
+                        android:textColor="@color/text_grey"
+                        android:textSize="@dimen/font_caption" />
+
+                    <TextView
+                        android:id="@+id/boiler_pressure"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="压力分析"
+                        android:textColor="@color/text_grey"
+                        android:textSize="@dimen/font_caption" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/indicator_right_padding"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/indicator_right_padding">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_module"
+                        android:text="压力容器"
+                        android:textColor="@color/text_littte_black"
+                        android:textSize="@dimen/font_body" />
+
+                    <TextView
+                        android:id="@+id/text_vessel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/margin_module"
+                        android:text="概览"
+                        android:textColor="@color/text_grey"
+                        android:textSize="@dimen/font_caption" />
+                </RelativeLayout>
+
+                <include layout="@layout/subtitle_divide_line_bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/vessel_category"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="类别分析"
+                        android:textColor="@color/text_grey"
+                        android:textSize="@dimen/font_caption" />
+
+                    <TextView
+                        android:id="@+id/vessel_area"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="使用场所分析"
+                        android:textColor="@color/text_grey"
+                        android:textSize="@dimen/font_caption" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/vessel_purpose"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="用途分析"
+                        android:textColor="@color/text_grey"
+                        android:textSize="@dimen/font_caption" />
+
+                    <TextView
+                        android:id="@+id/vessel_equipment"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="特殊设备分析"
+                        android:textColor="@color/text_grey"
+                        android:textSize="@dimen/font_caption" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/indicator_right_padding"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/indicator_right_padding">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_module"
+                        android:text="气瓶"
+                        android:textColor="@color/text_littte_black"
+                        android:textSize="@dimen/font_body" />
+
+                    <TextView
+                        android:id="@+id/text_cylindex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/margin_module"
+                        android:text="概览"
+                        android:textColor="@color/text_grey"
+                        android:textSize="@dimen/font_caption" />
+                </RelativeLayout>
+
+                <include layout="@layout/subtitle_divide_line_bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="类别分析"
+                        android:textColor="@color/text_grey"
+                        android:textSize="@dimen/font_caption" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="按充装单位分析"
+                        android:textColor="@color/text_grey"
+                        android:textSize="@dimen/font_caption" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="按介质种类分析"
+                        android:textColor="@color/text_grey"
+                        android:textSize="@dimen/font_caption" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="按容积分析"
+                        android:textColor="@color/text_grey"
+                        android:textSize="@dimen/font_caption" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/indicator_right_padding"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/indicator_right_padding">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_module"
+                        android:text="压力管道"
+                        android:textColor="@color/text_littte_black"
+                        android:textSize="@dimen/font_body" />
+
+                    <TextView
+                        android:id="@+id/text_pipe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/margin_module"
+                        android:text="概览"
+                        android:textColor="@color/text_grey"
+                        android:textSize="@dimen/font_caption" />
+                </RelativeLayout>
+
+                <include layout="@layout/subtitle_divide_line_bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/pipe_category"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="类别分析"
+                        android:textColor="@color/text_grey"
+                        android:textSize="@dimen/font_caption" />
+
+                    <TextView
+                        android:id="@+id/pipe_medium"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="根据介质分类"
+                        android:textColor="@color/text_grey"
+                        android:textSize="@dimen/font_caption" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/indicator_right_padding"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/indicator_right_padding">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_module"
+                        android:text="电梯"
+                        android:textColor="@color/text_littte_black"
+                        android:textSize="@dimen/font_body" />
+
+                    <TextView
+                        android:id="@+id/text_elevator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/margin_module"
+                        android:text="概览"
+                        android:textColor="@color/text_grey"
+                        android:textSize="@dimen/font_caption" />
+                </RelativeLayout>
+
+                <include layout="@layout/subtitle_divide_line_bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/elevator_category"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="类别分析"
+                        android:textColor="@color/text_grey"
+                        android:textSize="@dimen/font_caption" />
+
+                    <TextView
+                        android:id="@+id/elevator_area"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="使用场所分析"
+                        android:textColor="@color/text_grey"
+                        android:textSize="@dimen/font_caption" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/elevator_distribution"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="电梯分布情况"
+                        android:textColor="@color/text_grey"
+                        android:textSize="@dimen/font_caption" />
+
+                    <TextView
+                        android:id="@+id/elevator_service_life"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="住宅电梯使用年限"
+                        android:textColor="@color/text_grey"
+                        android:textSize="@dimen/font_caption" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/elevator_evaluation"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="电梯评估分析"
+                        android:textColor="@color/text_grey"
+                        android:textSize="@dimen/font_caption" />
+
+                    <TextView
+                        android:id="@+id/elevator_growth"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="电梯增长情况"
+                        android:textColor="@color/text_grey"
+                        android:textSize="@dimen/font_caption" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/elevator_maintenance"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="维保单位"
+                        android:textColor="@color/text_grey"
+                        android:textSize="@dimen/font_caption" />
+
+                    <TextView
+                        android:id="@+id/elevator_renovation"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="住宅电梯改造情况分析"
+                        android:textColor="@color/text_grey"
+                        android:textSize="@dimen/font_caption" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/indicator_right_padding"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/indicator_right_padding">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_module"
+                        android:text="起重器械"
+                        android:textColor="@color/text_littte_black"
+                        android:textSize="@dimen/font_body" />
+
+                    <TextView
+                        android:id="@+id/text_lifting"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/margin_module"
+                        android:text="概览"
+                        android:textColor="@color/text_grey"
+                        android:textSize="@dimen/font_caption" />
+                </RelativeLayout>
+
+                <include layout="@layout/subtitle_divide_line_bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/lifting_category"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="类别分析"
+                        android:textColor="@color/text_grey"
+                        android:textSize="@dimen/font_caption" />
+
+                    <TextView
+                        android:id="@+id/lifting_area"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="使用场所分析"
+                        android:textColor="@color/text_grey"
+                        android:textSize="@dimen/font_caption" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/lifting_tonnage"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="吨位分析"
+                        android:textColor="@color/text_grey"
+                        android:textSize="@dimen/font_caption" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/indicator_right_padding"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/indicator_right_padding">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_module"
+                        android:text="厂内车辆分析"
+                        android:textColor="@color/text_littte_black"
+                        android:textSize="@dimen/font_body" />
+
+                    <TextView
+                        android:id="@+id/text_vehicle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/margin_module"
+                        android:text="概览"
+                        android:textColor="@color/text_grey"
+                        android:textSize="@dimen/font_caption" />
+                </RelativeLayout>
+
+                <include layout="@layout/subtitle_divide_line_bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/vehicle_category"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="类别分析"
+                        android:textColor="@color/text_grey"
+                        android:textSize="@dimen/font_caption" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/indicator_right_padding"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/indicator_right_padding">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_module"
+                        android:text="游乐设施"
+                        android:textColor="@color/text_littte_black"
+                        android:textSize="@dimen/font_body" />
+
+                    <TextView
+                        android:id="@+id/text_facility"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/margin_module"
+                        android:text="概览"
+                        android:textColor="@color/text_grey"
+                        android:textSize="@dimen/font_caption" />
+                </RelativeLayout>
+
+                <include layout="@layout/subtitle_divide_line_bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/facility_category"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="类别分析"
+                        android:textColor="@color/text_grey"
+                        android:textSize="@dimen/font_caption" />
+
+                    <TextView
+                        android:id="@+id/facility_level"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="按设备级别分析"
+                        android:textColor="@color/text_grey"
+                        android:textSize="@dimen/font_caption" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/indicator_right_padding"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/indicator_right_padding">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_module"
+                        android:text="客运索道"
+                        android:textColor="@color/text_littte_black"
+                        android:textSize="@dimen/font_body" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/margin_module"
+                        android:text="概览"
+                        android:textColor="@color/text_grey"
+                        android:textSize="@dimen/font_caption" />
+                </RelativeLayout>
+
+                <include layout="@layout/subtitle_divide_line_bold" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

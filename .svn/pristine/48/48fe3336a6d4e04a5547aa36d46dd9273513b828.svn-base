@@ -1,0 +1,91 @@
+package com.wondersgroup.special.activity.unit;
+
+import android.os.Bundle;
+import android.view.View;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
+
+import com.wondersgroup.special.R;
+import com.wondersgroup.special.activity.BaseActivity;
+import com.wondersgroup.special.entity.UseListResult;
+
+public class ProductUnitDetailActivity extends BaseActivity {
+    private UseListResult.UseList result;
+    private TextView mUnitName, mUnitCode, mUnitProperty, mUnitType, mUnitAddress, mUnitPhone;
+    private RelativeLayout mRelativeBasicInfo, mRelativePermitInfo, mRelativeEquInfo, mRelativeEmployInfo,
+            mRelativeRoutine, mRelativeVote, mRelativePunish, mRelativeAccident, mRelativeAward, mRelativeChange;
+
+    @Override
+    protected void initView() {
+        setContentView(R.layout.activity_use_unit_detail);
+        mTitle.setText("生产单位查询详情");
+        mUnitName = (TextView) findViewById(R.id.unit_name);
+        mUnitCode = (TextView) findViewById(R.id.unit_code);
+        mUnitProperty = (TextView) findViewById(R.id.unit_property);
+        mUnitType = (TextView) findViewById(R.id.unit_type);
+        mUnitAddress = (TextView) findViewById(R.id.unit_address);
+        mUnitPhone = (TextView) findViewById(R.id.unit_phone);
+        mRelativeBasicInfo = (RelativeLayout) findViewById(R.id.relative_basic_info);
+        mRelativePermitInfo = (RelativeLayout) findViewById(R.id.relative_permit_info);
+        mRelativeEquInfo = (RelativeLayout) findViewById(R.id.relative_equ_info);
+        mRelativeEmployInfo = (RelativeLayout) findViewById(R.id.relative_employ_info);
+        mRelativeRoutine = (RelativeLayout) findViewById(R.id.relative_routine);
+        mRelativeVote = (RelativeLayout) findViewById(R.id.relative_vote);
+        mRelativePunish = (RelativeLayout) findViewById(R.id.relative_punish);
+        mRelativeAccident = (RelativeLayout) findViewById(R.id.relative_accident);
+        mRelativeAward = (RelativeLayout) findViewById(R.id.relative_award);
+        mRelativeChange = (RelativeLayout) findViewById(R.id.relative_change);
+        mRelativeBasicInfo.setOnClickListener(this);
+        mRelativePermitInfo.setOnClickListener(this);
+        mRelativeEquInfo.setOnClickListener(this);
+        mRelativeEmployInfo.setOnClickListener(this);
+        mRelativeRoutine.setOnClickListener(this);
+        mRelativeVote.setOnClickListener(this);
+        mRelativePunish.setOnClickListener(this);
+        mRelativeAccident.setOnClickListener(this);
+        mRelativeAward.setOnClickListener(this);
+        mRelativeChange.setOnClickListener(this);
+    }
+
+    @Override
+    protected void initData(Bundle savedInstanceState) {
+        result = (UseListResult.UseList) getIntent().getSerializableExtra("DATA");
+        if (null != result) {
+            mUnitName.setText(result.getUnitName());
+            mUnitCode.setText("组织机构代码：" + result.getUnitCode());
+            mUnitProperty.setText("单位性质：" + result.getUnitProperty());
+            mUnitType.setText("单位类型：" + result.getUnitType());
+            mUnitAddress.setText("单位地址：" + result.getUnitAddress());
+            mUnitPhone.setText("联系电话：" + result.getUnitPhone());
+        }
+    }
+
+    @Override
+    public void onClick(View v) {
+        super.onClick(v);
+        switch (v.getId()) {
+            case R.id.relative_basic_info:
+                break;
+            case R.id.relative_permit_info:
+                break;
+            case R.id.relative_equ_info:
+                break;
+            case R.id.relative_employ_info:
+                break;
+            case R.id.relative_routine:
+                break;
+            case R.id.relative_vote:
+                break;
+            case R.id.relative_punish:
+                break;
+            case R.id.relative_accident:
+                break;
+            case R.id.relative_award:
+                break;
+            case R.id.relative_change:
+                break;
+            default:
+                break;
+        }
+    }
+}

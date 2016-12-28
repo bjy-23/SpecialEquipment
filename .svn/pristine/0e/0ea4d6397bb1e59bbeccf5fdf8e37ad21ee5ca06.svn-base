@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    package="com.github.mikephil.charting.data.realm"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="1"
+    android:versionName="2.0.2" > <!-- <application -->
+    <!-- android:allowBackup="true" -->
+    <!-- android:label="@string/app_name" -->
+    <!-- android:supportsRtl="true" -->
+    <!-- &gt; -->
+    <!-- </application> -->
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="24" />
+
+</manifest>

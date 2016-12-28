@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_employment_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context="com.wondersgroup.special.employment.activity.EmploymentDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_module"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/indicator_right_padding"
+        android:paddingLeft="@dimen/padding"
+        android:paddingRight="@dimen/padding"
+        android:paddingTop="@dimen/indicator_right_padding"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/name"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/font_body" />
+
+            <TextView
+                android:id="@+id/employment_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sex"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/font_caption" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/indicator_right_padding">
+
+            <LinearLayout
+                android:id="@+id/linear_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="@dimen/padding"
+                android:layout_toLeftOf="@+id/avatar"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_module"
+                    android:text="@string/item_id_code"
+                    android:textColor="@color/text_grey"
+                    android:textSize="@dimen/font_caption" />
+
+                <TextView
+                    android:id="@+id/employed_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_module"
+                    android:text="@string/employed_unit"
+                    android:textColor="@color/text_grey"
+                    android:textSize="@dimen/font_caption" />
+
+                <TextView
+                    android:id="@+id/birthday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_module"
+                    android:text="@string/birthday"
+                    android:textColor="@color/text_grey"
+                    android:textSize="@dimen/font_caption" />
+
+                <TextView
+                    android:id="@+id/age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_module"
+                    android:text="@string/age"
+                    android:textColor="@color/text_grey"
+                    android:textSize="@dimen/font_caption" />
+
+                <TextView
+                    android:id="@+id/education"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_module"
+                    android:text="@string/education"
+                    android:textColor="@color/text_grey"
+                    android:textSize="@dimen/font_caption" />
+
+                <TextView
+                    android:id="@+id/origin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_module"
+                    android:text="@string/origin"
+                    android:textColor="@color/text_grey"
+                    android:textSize="@dimen/font_caption" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/avatar"
+                android:layout_width="100dp"
+                android:layout_height="116dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/linear_info"
+                android:contentDescription="@string/app_name"
+                android:src="@mipmap/ic_launcher" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include layout="@layout/item_employment_list" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/margin_module"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/relative_basic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/indicator_right_padding"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/indicator_right_padding">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/basic_info"
+                android:textColor="@color/text_grey"
+                android:textSize="@dimen/font_caption" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/icon_arrow_right" />
+        </RelativeLayout>
+
+        <include layout="@layout/subtitle_divide_line_bold" />
+        <RelativeLayout
+            android:id="@+id/relative_work"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/indicator_right_padding"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/indicator_right_padding">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="工作履历"
+                android:textColor="@color/text_grey"
+                android:textSize="@dimen/font_caption"
+                android:layout_alignParentTop="true" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/icon_arrow_right" />
+        </RelativeLayout>
+
+        <include layout="@layout/subtitle_divide_line_bold" />
+
+        <RelativeLayout
+            android:id="@+id/relative_permission"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/indicator_right_padding"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/indicator_right_padding">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="许可信息"
+                android:textColor="@color/text_grey"
+                android:textSize="@dimen/font_caption" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/icon_arrow_right" />
+        </RelativeLayout>
+
+        <include layout="@layout/subtitle_divide_line_bold" />
+
+        <RelativeLayout
+            android:id="@+id/relative_reward"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/indicator_right_padding"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/indicator_right_padding">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/disciplinary_info"
+                android:textColor="@color/text_grey"
+                android:textSize="@dimen/font_caption" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/icon_arrow_right" />
+        </RelativeLayout>
+
+        <include layout="@layout/subtitle_divide_line_bold" />
+
+
+        <RelativeLayout
+            android:id="@+id/relative_train"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/indicator_right_padding"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/indicator_right_padding">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/icon_arrow_right" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/training_record"
+                android:textColor="@color/text_grey"
+                android:textSize="@dimen/font_caption"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/textView" />
+        </RelativeLayout>
+
+        <include layout="@layout/subtitle_divide_line_bold" />
+
+        <RelativeLayout
+            android:id="@+id/relative_check"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/indicator_right_padding"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/indicator_right_padding">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="考核信息"
+                android:textColor="@color/text_grey"
+                android:textSize="@dimen/font_caption" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/icon_arrow_right" />
+        </RelativeLayout>
+
+        <include layout="@layout/subtitle_divide_line_bold" />
+
+        <RelativeLayout
+            android:id="@+id/relative_change"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/indicator_right_padding"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/indicator_right_padding">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="变更信息"
+                android:textColor="@color/text_grey"
+                android:textSize="@dimen/font_caption" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/icon_arrow_right" />
+        </RelativeLayout>
+
+        <include layout="@layout/subtitle_divide_line_bold" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

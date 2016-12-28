@@ -1,0 +1,260 @@
+package com.wondersgroup.special.homepage;
+
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+
+import com.github.mikephil.charting.charts.HorizontalBarChart;
+import com.github.mikephil.charting.components.AxisBase;
+import com.github.mikephil.charting.components.Legend;
+import com.github.mikephil.charting.components.XAxis;
+import com.github.mikephil.charting.components.YAxis;
+import com.github.mikephil.charting.data.BarData;
+import com.github.mikephil.charting.data.BarDataSet;
+import com.github.mikephil.charting.data.BarEntry;
+import com.github.mikephil.charting.data.Entry;
+import com.github.mikephil.charting.formatter.IAxisValueFormatter;
+import com.github.mikephil.charting.formatter.IValueFormatter;
+import com.github.mikephil.charting.interfaces.datasets.IBarDataSet;
+import com.github.mikephil.charting.utils.ViewPortHandler;
+import com.wondersgroup.special.R;
+import com.wondersgroup.special.ResponseCallBack;
+import com.wondersgroup.special.activity.BaseActivity;
+import com.wondersgroup.special.adapter.AnalysisAdapter;
+import com.wondersgroup.special.constant.Constant;
+import com.wondersgroup.special.constant.UrlConstant;
+import com.wondersgroup.special.datepicker.SectionDatePickerDialog;
+import com.wondersgroup.special.entity.AnalysisResult;
+import com.wondersgroup.special.utils.DateUtils;
+import com.wondersgroup.special.widget.SVListView;
+import com.zhy.http.okhttp.OkHttpUtils;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import okhttp3.Call;
+import okhttp3.Request;
+
+public class PlaceActivity extends BaseActivity {
+    private SVListView mList;
+    private TextView mTextChartName;
+    private HorizontalBarChart mHorizontalBarChart;
+    private List<AnalysisResult> data;
+    private LinearLayout mLinearSection;
+    private SectionDatePickerDialog mSectionDialog;
+    private TextView mIntervalStartDate, mIntervalEndDate;
+    private AnalysisAdapter analysisAdapter;
+
+    @Override
+    protected void initView() {
+        setContentView(R.layout.activity_place);
+        mTitle.setText("电梯使用场所分析");
+        mHorizontalBarChart = (HorizontalBarChart) findViewById(R.id.hbar_chart);
+        mList = (SVListView) findViewById(R.id.list);
+        mTextChartName = (TextView) findViewById(R.id.chart_name);
+        mTextChartName.setText("电梯使用场所和数量");
+        mLinearSection = (LinearLayout) findViewById(R.id.linear_section);
+        mLinearSection.setOnClickListener(this);
+        mIntervalStartDate = (TextView) findViewById(R.id.interval_start_date);
+        mIntervalStartDate.setText(DateUtils.getFirstDay());
+        mIntervalEndDate = (TextView) findViewById(R.id.interval_end_date);
+        mIntervalEndDate.setText(DateUtils.getToday());
+        mList.setOnItemClickListener(new SVListView.OnItemClickListener() {
+            @Override
+            public void onItemClick(View view, int position) {
+                Intent intent = new Intent(PlaceActivity.this, HomeDataActivity.class);
+                Bundle bundle = new Bundle();
+                bundle.putString("UUID", data.get(position).getUuid());
+                bundle.putString("HOME_DATA_TYPE", Constant.HomeDateType.TYPE_ELEVATOR_USE);
+                bundle.putString("START_YEAR", mIntervalStartDate.getText().toString());
+                bundle.putString("END_YEAR", mIntervalEndDate.getText().toString());
+                intent.putExtras(bundle);
+                startActivity(intent);
+            }
+        });
+    }
+
+    @Override
+    protected void initData(Bundle savedInstanceState) {
+        data = new ArrayList<>();
+        Bundle bundle = getIntent().getExtras();
+        String mStartYear = bundle.getString("START_YEAR");
+        String mEndYear = bundle.getString("END_YEAR");
+        mIntervalStartDate.setText(mStartYear);
+        mIntervalEndDate.setText(mEndYear);
+        showPlaceAnalysis();
+    }
+
+    /**
+     * 显示场所分析
+     */
+    private void showPlaceAnalysis() {
+        mHorizontalBarChart.setDrawBarShadow(false);
+
+        mHorizontalBarChart.setDrawValueAboveBar(true);
+
+        mHorizontalBarChart.getDescription().setEnabled(false);
+
+        // if more than 60 entries are displayed in the chart, no values will be
+        // drawn
+        mHorizontalBarChart.setMaxVisibleValueCount(120);
+
+        // scaling can now only be done on x- and y-axis separately
+        mHorizontalBarChart.setPinchZoom(false);
+
+        // draw shadows for each bar that show the maximum value
+        // mChart.setDrawBarShadow(true);
+
+        mHorizontalBarChart.setDrawGridBackground(false);
+
+        getPlaceAnalysis();
+    }
+
+    public void getPlaceAnalysis() {
+        OkHttpUtils.get()
+                .url(UrlConstant.GET_ANALYSIS_DATA)
+                .addParams(getResources().getString(R.string.type), Constant.Overview.ELEVATOR)
+                .addParams(getResources().getString(R.string.orderNum), Constant.Elevator.AREA)
+                .addParams(getResources().getString(R.string.startDate), mIntervalStartDate.getText().toString())
+                .addParams(getResources().getString(R.string.endDate), mIntervalEndDate.getText().toString())
+                .build()
+                .execute(new ResponseCallBack<AnalysisResult>() {
+                    @Override
+                    public void onResponse(List<AnalysisResult> result) {
+                        super.onResponse(result);
+                        if (null != result) {
+                            setPlaceAnalysisData(result);
+                            data.clear();
+                            data.addAll(result);
+                            analysisAdapter = new AnalysisAdapter(PlaceActivity.this, data);
+                            mList.setAdapter(analysisAdapter);
+                        }
+                    }
+
+                    @Override
+                    public void onAfter() {
+                        super.onAfter();
+                    }
+
+                    @Override
+                    public void onBefore(Request request) {
+                        super.onBefore(request);
+                    }
+
+                    @Override
+                    public void onError(Call call, Exception e) {
+                        super.onError(call, e);
+                    }
+                });
+    }
+
+    private void setPlaceAnalysisData(final List<AnalysisResult> datas) {
+//        float barWidth = 9f;
+        float barWidth = 0.45f;
+        float spaceForBar = 10f;
+
+        ArrayList<BarEntry> yVals1 = new ArrayList<BarEntry>();
+
+        for (int i = 0; i < datas.size(); i++) {
+            yVals1.add(new BarEntry(i, Float.parseFloat(datas.get(i).getValue())));
+        }
+
+        XAxis xl = mHorizontalBarChart.getXAxis();
+        xl.setValueFormatter(new IAxisValueFormatter() {
+            @Override
+            public String getFormattedValue(float value, AxisBase axis) {
+                return datas.get((int) value).getName();
+            }
+        });
+        xl.setPosition(XAxis.XAxisPosition.BOTTOM);
+        xl.setDrawAxisLine(true);
+        xl.setDrawGridLines(false);
+        xl.setLabelCount(10);
+        xl.setGranularity(1f);
+
+        YAxis yl = mHorizontalBarChart.getAxisLeft();
+        yl.setEnabled(false);
+        yl.setDrawAxisLine(true);
+        yl.setDrawGridLines(true);
+        yl.setAxisMinimum(0f); // this replaces setStartAtZero(true)
+//        yl.setInverted(true);
+
+        YAxis yr = mHorizontalBarChart.getAxisRight();
+        yr.setDrawAxisLine(true);
+        yr.setDrawGridLines(false);
+        yr.setGranularity(1f);
+        yr.setAxisMinimum(0f); // this replaces setStartAtZero(true)
+//        yr.setInverted(true);
+
+        mHorizontalBarChart.setFitBars(true);
+        mHorizontalBarChart.animateY(2500);
+
+        Legend l = mHorizontalBarChart.getLegend();
+        l.setEnabled(false);
+        l.setVerticalAlignment(Legend.LegendVerticalAlignment.BOTTOM);
+        l.setHorizontalAlignment(Legend.LegendHorizontalAlignment.LEFT);
+        l.setOrientation(Legend.LegendOrientation.HORIZONTAL);
+        l.setDrawInside(false);
+        l.setFormSize(8f);
+        l.setXEntrySpace(4f);
+
+        BarDataSet set1;
+
+        if (mHorizontalBarChart.getData() != null &&
+                mHorizontalBarChart.getData().getDataSetCount() > 0) {
+            set1 = (BarDataSet) mHorizontalBarChart.getData().getDataSetByIndex(0);
+            set1.setValues(yVals1);
+            mHorizontalBarChart.getData().notifyDataChanged();
+            mHorizontalBarChart.notifyDataSetChanged();
+        } else {
+            set1 = new BarDataSet(yVals1, "");
+
+            ArrayList<IBarDataSet> dataSets = new ArrayList<IBarDataSet>();
+            dataSets.add(set1);
+
+            BarData data = new BarData(dataSets);
+            data.setValueFormatter(new IValueFormatter() {
+
+                @Override
+                public String getFormattedValue(float value, Entry entry, int dataSetIndex, ViewPortHandler viewPortHandler) {
+                    return String.valueOf((int) value);
+                }
+            });
+            data.setValueTextSize(10f);
+            data.setBarWidth(barWidth);
+            mHorizontalBarChart.setData(data);
+        }
+    }
+
+
+    @Override
+    public void onClick(View v) {
+        super.onClick(v);
+        switch (v.getId()) {
+            case R.id.linear_section:
+                String[] arrStart = DateUtils.getStrSplit(mIntervalStartDate.getText().toString(), "-");
+                String[] arrEnd = DateUtils.getStrSplit(mIntervalEndDate.getText().toString(), "-");
+                if (null == mSectionDialog || (mSectionDialog != null && !mSectionDialog.isShowing())) {
+                    mSectionDialog = new SectionDatePickerDialog.Builder(PlaceActivity.this)
+                            .setStartDate(Integer.valueOf(arrStart[0]), Integer.valueOf(arrStart[1]), Integer.valueOf(arrStart[2]))
+                            .setEndDate(Integer.valueOf(arrEnd[0]), Integer.valueOf(arrEnd[1]), Integer.valueOf(arrEnd[2]))
+                            .setNegativeButton("取消", null).setPositiveButton("确定", new SectionDatePickerDialog.Builder.OnDatePickListener() {
+                                @Override
+                                public void onDatePick(DialogInterface dialog, int witch, int... args) {
+                                    mIntervalStartDate.setText(args[0] + "-" + args[1] + "-" + args[2]);
+                                    mIntervalEndDate.setText(args[3] + "-" + args[4] + "-" + args[5]);
+                                    showPlaceAnalysis();
+                                }
+                            }).create();
+                    mSectionDialog.setCanceledOnTouchOutside(false);
+                    mSectionDialog.show();
+                    break;
+                }
+                break;
+        }
+    }
+
+}

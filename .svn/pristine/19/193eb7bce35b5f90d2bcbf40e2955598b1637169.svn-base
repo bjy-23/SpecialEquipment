@@ -1,0 +1,44 @@
+package com.wondersgroup.special.archive;
+
+import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+
+import com.wondersgroup.special.R;
+import com.wondersgroup.special.activity.BaseActivity;
+
+import java.util.Iterator;
+import java.util.LinkedHashMap;
+
+public class ArchiveDetailActivity extends BaseActivity {
+    private LinearLayout mLinearDetail;
+    private LinkedHashMap<String, String> data;
+
+    @Override
+    protected void initView() {
+        setContentView(R.layout.activity_detail);
+        mLinearDetail = (LinearLayout) findViewById(R.id.activity_detail);
+        mLinearDetail.removeAllViews();
+    }
+
+    @Override
+    protected void initData(Bundle savedInstanceState) {
+        data = RoutineInfo.baseInfo();
+        Iterator ite = data.keySet().iterator();
+        while (ite.hasNext()) {
+            String key = (String) ite.next();
+            mLinearDetail.addView(getItemView(key, (String) data.get(key)));
+        }
+    }
+
+    private View getItemView(String strText, String strValue) {
+        View view = LayoutInflater.from(ArchiveDetailActivity.this).inflate(R.layout.item_recycler, null);
+        TextView text = (TextView) view.findViewById(R.id.text);
+        TextView value = (TextView) view.findViewById(R.id.value);
+        text.setText(strText);
+        value.setText(strValue);
+        return view;
+    }
+}

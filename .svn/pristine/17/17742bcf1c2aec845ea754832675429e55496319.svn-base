@@ -1,0 +1,101 @@
+package com.wondersgroup.special.activity.unit;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
+
+import com.wondersgroup.special.R;
+import com.wondersgroup.special.activity.BaseActivity;
+import com.wondersgroup.special.activity.DetailActivity;
+import com.wondersgroup.special.constant.Constant;
+import com.wondersgroup.special.entity.CheckUnitListResult;
+
+public class CheckUnitDetailActivity extends BaseActivity {
+    private TextView mEntName, mCreditCode, mOrganCode, mPersonScale, mOrganProperty, mAddress;
+    private CheckUnitListResult.CheckList result;
+    private RelativeLayout mRelativeBasicInfo, mRelativePermitInfo, mRelativeEquInfo, mRelativeEmployInfo,
+            mRelativeRoutine, mRelativeVote, mRelativePunish, mRelativeAccident, mRelativeAward, mRelativeChange;
+
+    @Override
+    protected void initView() {
+        setContentView(R.layout.activity_check_unit_detail);
+        mTitle.setText("检验检测单位详情");
+        mCreditCode = (TextView) findViewById(R.id.credit_code);
+        mEntName = (TextView) findViewById(R.id.ent_name);
+        mOrganCode = (TextView) findViewById(R.id.organ_code);
+        mPersonScale = (TextView) findViewById(R.id.person_scale);
+        mOrganProperty = (TextView) findViewById(R.id.organ_property);
+        mAddress = (TextView) findViewById(R.id.address);
+        mRelativeBasicInfo = (RelativeLayout) findViewById(R.id.relative_basic_info);
+        mRelativePermitInfo = (RelativeLayout) findViewById(R.id.relative_permit_info);
+        mRelativeEquInfo = (RelativeLayout) findViewById(R.id.relative_equ_info);
+        mRelativeEmployInfo = (RelativeLayout) findViewById(R.id.relative_employ_info);
+        mRelativeRoutine = (RelativeLayout) findViewById(R.id.relative_routine);
+        mRelativeVote = (RelativeLayout) findViewById(R.id.relative_vote);
+        mRelativePunish = (RelativeLayout) findViewById(R.id.relative_punish);
+        mRelativeAccident = (RelativeLayout) findViewById(R.id.relative_accident);
+        mRelativeAward = (RelativeLayout) findViewById(R.id.relative_award);
+        mRelativeChange = (RelativeLayout) findViewById(R.id.relative_change);
+        mRelativeBasicInfo.setOnClickListener(this);
+        mRelativePermitInfo.setOnClickListener(this);
+        mRelativeEquInfo.setOnClickListener(this);
+        mRelativeEmployInfo.setOnClickListener(this);
+        mRelativeRoutine.setOnClickListener(this);
+        mRelativeVote.setOnClickListener(this);
+        mRelativePunish.setOnClickListener(this);
+        mRelativeAccident.setOnClickListener(this);
+        mRelativeAward.setOnClickListener(this);
+        mRelativeChange.setOnClickListener(this);
+    }
+
+    @Override
+    protected void initData(Bundle savedInstanceState) {
+        result = (CheckUnitListResult.CheckList) getIntent().getSerializableExtra("DATA");
+        if (null != result) {
+            mEntName.setText(result.getOrganName());
+            mCreditCode.setText("企业信用代码：" + result.getOrganSocialCode());
+            mOrganCode.setText("行政区划：" + result.getOrganCode());
+            mPersonScale.setText("单位级别：" + result.getPersonScale());
+            mOrganProperty.setText("单位性质：" + result.getOrganProperty());
+            mAddress.setText("单位地址：" + result.getOrganAddress());
+        }
+    }
+
+    @Override
+    public void onClick(View v) {
+        super.onClick(v);
+        Intent intent = new Intent();
+        Bundle bundle = new Bundle();
+        bundle.putString("UUID", result.getUuid());
+        switch (v.getId()) {
+            case R.id.relative_basic_info:
+                bundle.putString("INFO", Constant.Info.CHECK_UNIT_INFO);
+                intent.putExtras(bundle);
+                intent.setClass(CheckUnitDetailActivity.this, DetailActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.relative_permit_info:
+                break;
+            case R.id.relative_equ_info:
+                break;
+            case R.id.relative_employ_info:
+                break;
+            case R.id.relative_routine:
+                break;
+            case R.id.relative_vote:
+                break;
+            case R.id.relative_punish:
+                break;
+            case R.id.relative_accident:
+                break;
+            case R.id.relative_award:
+                break;
+            case R.id.relative_change:
+                break;
+            default:
+                break;
+        }
+    }
+}

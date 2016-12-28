@@ -1,0 +1,282 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:2:1-80:12
+	package
+		ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:3:5-36
+		INJECTED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:2:11-69
+	android:versionCode
+		INJECTED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:5:5-67
+	android:name
+		ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:5:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:6:5-79
+	android:name
+		ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:6:22-76
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:7:5-75
+	android:name
+		ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:7:22-72
+uses-permission#android.permission.MOUNT_UNMOUNT_FILESYSTEMS
+ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:8:5-84
+	android:name
+		ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:8:22-81
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:9:5-81
+	android:name
+		ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:9:22-78
+uses-permission#android.permission.VIBRATE
+ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:10:5-66
+	android:name
+		ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:10:22-63
+uses-permission#android.permission.CAMERA
+ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:11:5-65
+	android:name
+		ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:11:22-62
+uses-feature#android.hardware.camera
+ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:13:5-60
+	android:name
+		ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:13:19-57
+uses-feature#android.hardware.camera.autofocus
+ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:14:5-70
+	android:name
+		ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:14:19-67
+application
+ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:16:5-78:19
+MERGED from [com.github.vajro:MaterialDesignLibrary:1.6] /Users/workspace/SpecialEquipment/app/build/intermediates/exploded-aar/com.github.vajro/MaterialDesignLibrary/1.6/AndroidManifest.xml:11:5-14:19
+MERGED from [com.android.support:support-v4:23.4.0] /Users/workspace/SpecialEquipment/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/workspace/SpecialEquipment/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/workspace/SpecialEquipment/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/workspace/SpecialEquipment/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
+	android:label
+		ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:21:9-41
+	android:supportsRtl
+		ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:22:9-35
+	android:hardwareAccelerated
+		ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:19:9-43
+	android:allowBackup
+		ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:18:9-35
+	android:icon
+		ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:20:9-43
+	android:theme
+		ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:23:9-40
+	android:name
+		ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:17:9-39
+meta-data#com.baidu.lbsapi.API_KEY
+ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:24:9-26:64
+	android:value
+		ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:26:13-61
+	android:name
+		ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:25:13-52
+activity#com.wondersgroup.pork.activity.LoginActivity
+ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:28:9-34:20
+	android:name
+		ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:28:19-57
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:29:13-33:29
+action#android.intent.action.MAIN
+ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:30:17-69
+	android:name
+		ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:30:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:32:17-77
+	android:name
+		ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:32:27-74
+activity#com.wondersgroup.pork.activity.WelcomeActivity
+ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:35:9-62
+	android:name
+		ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:35:19-59
+activity#com.wondersgroup.pork.activity.MainActivity
+ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:36:9-59
+	android:name
+		ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:36:19-56
+activity#com.wondersgroup.pork.activity.unit.UseUnitActivity
+ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:37:9-67
+	android:name
+		ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:37:19-64
+activity#com.wondersgroup.pork.activity.unit.UseUnitListActivity
+ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:38:9-71
+	android:name
+		ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:38:19-68
+activity#com.wondersgroup.pork.activity.unit.UseUnitDetailActivity
+ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:39:9-73
+	android:name
+		ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:39:19-70
+activity#com.wondersgroup.pork.activity.unit.ProductUnitActivity
+ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:40:9-71
+	android:name
+		ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:40:19-68
+activity#com.wondersgroup.pork.activity.unit.ProductUnitListActivity
+ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:41:9-75
+	android:name
+		ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:41:19-72
+activity#com.wondersgroup.pork.activity.unit.ProductUnitDetailActivity
+ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:42:9-77
+	android:name
+		ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:42:19-74
+activity#com.wondersgroup.pork.activity.EmploymentActivity
+ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:43:9-65
+	android:name
+		ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:43:19-62
+activity#com.wondersgroup.pork.activity.EmploymentListActivity
+ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:44:9-69
+	android:name
+		ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:44:19-66
+activity#com.wondersgroup.pork.activity.EmploymentDetailActivity
+ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:45:9-71
+	android:name
+		ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:45:19-68
+activity#com.wondersgroup.pork.activity.EquipmentActivity
+ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:46:9-64
+	android:name
+		ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:46:19-61
+activity#com.wondersgroup.pork.activity.EquipmentListActivity
+ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:47:9-68
+	android:name
+		ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:47:19-65
+activity#com.wondersgroup.pork.activity.EquipmentDetailActivity
+ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:48:9-70
+	android:name
+		ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:48:19-67
+activity#com.wondersgroup.pork.activity.CategoryActivity
+ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:49:9-63
+	android:name
+		ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:49:19-60
+activity#com.wondersgroup.pork.activity.AnalysisActivity
+ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:50:9-63
+	android:name
+		ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:50:19-60
+activity#com.wondersgroup.pork.activity.OverviewActivity
+ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:51:9-63
+	android:name
+		ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:51:19-60
+activity#com.wondersgroup.pork.activity.DetailActivity
+ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:52:9-61
+	android:name
+		ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:52:19-58
+activity#com.wondersgroup.pork.activity.unit.CheckUnitActivity
+ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:53:9-69
+	android:name
+		ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:53:19-66
+activity#com.wondersgroup.pork.activity.unit.CheckUnitListActivity
+ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:54:9-73
+	android:name
+		ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:54:19-70
+activity#com.wondersgroup.pork.activity.EntPermitActivity
+ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:55:9-64
+	android:name
+		ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:55:19-61
+activity#com.wondersgroup.pork.activity.EntPermitListActivity
+ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:56:9-68
+	android:name
+		ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:56:19-65
+activity#com.wondersgroup.pork.activity.PersonPermitActivity
+ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:57:9-67
+	android:name
+		ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:57:19-64
+activity#com.wondersgroup.pork.activity.PersonPermitListActivity
+ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:58:9-71
+	android:name
+		ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:58:19-68
+activity#com.wondersgroup.pork.activity.ManageActivity
+ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:59:9-61
+	android:name
+		ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:59:19-58
+activity#com.wondersgroup.pork.activity.ManageListActivity
+ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:60:9-65
+	android:name
+		ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:60:19-62
+activity#com.wondersgroup.pork.activity.VoteActivity
+ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:61:9-59
+	android:name
+		ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:61:19-56
+activity#com.wondersgroup.pork.activity.VoteListActivity
+ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:62:9-63
+	android:name
+		ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:62:19-60
+activity#com.wondersgroup.pork.activity.EntPermitDetailActivity
+ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:63:9-70
+	android:name
+		ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:63:19-67
+activity#com.wondersgroup.pork.homepage.HomeDataActivity
+ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:64:9-63
+	android:name
+		ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:64:19-60
+activity#com.wondersgroup.pork.homepage.EmergentActivity
+ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:65:9-63
+	android:name
+		ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:65:19-60
+activity#com.wondersgroup.pork.homepage.PlaceActivity
+ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:66:9-60
+	android:name
+		ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:66:19-57
+activity#com.wondersgroup.pork.homepage.TotalEquipmentActivity
+ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:67:9-69
+	android:name
+		ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:67:19-66
+activity#com.wondersgroup.pork.homepage.EquipmentOverviewActivity
+ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:68:9-72
+	android:name
+		ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:68:19-69
+activity#com.wondersgroup.pork.activity.BDMapActivity
+ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:69:9-60
+	android:name
+		ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:69:19-57
+activity#com.wondersgroup.pork.activity.QueryRecordActivity
+ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:70:9-66
+	android:name
+		ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:70:19-63
+activity#com.wondersgroup.pork.activity.RecordActivity
+ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:71:9-61
+	android:name
+		ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:71:19-58
+activity#com.wondersgroup.pork.activity.unit.CheckUnitDetailActivity
+ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:72:9-75
+	android:name
+		ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:72:19-72
+activity#com.wondersgroup.pork.activity.VoteDetailActivity
+ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:73:9-65
+	android:name
+		ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:73:19-62
+activity#com.wondersgroup.pork.archive.RoutineActivity
+ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:74:9-61
+	android:name
+		ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:74:19-58
+activity#com.wondersgroup.pork.archive.ArchiveDetailActivity
+ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:75:9-67
+	android:name
+		ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:75:19-64
+activity#com.wondersgroup.pork.archive.CheckActivity
+ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:76:9-59
+	android:name
+		ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:76:19-56
+activity#com.wondersgroup.pork.activity.EquipmentBaseInfoActivity
+ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:77:9-81
+	android:name
+		ADDED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml:77:19-69
+uses-sdk
+INJECTED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.github.PhilJay:MPAndroidChart-Realm:v2.0.2] /Users/workspace/SpecialEquipment/app/build/intermediates/exploded-aar/com.github.PhilJay/MPAndroidChart-Realm/v2.0.2/AndroidManifest.xml:12:5-14:41
+MERGED from [com.github.vajro:MaterialDesignLibrary:1.6] /Users/workspace/SpecialEquipment/app/build/intermediates/exploded-aar/com.github.vajro/MaterialDesignLibrary/1.6/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:support-v4:23.4.0] /Users/workspace/SpecialEquipment/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/workspace/SpecialEquipment/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/workspace/SpecialEquipment/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/workspace/SpecialEquipment/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:recyclerview-v7:23.4.0] /Users/workspace/SpecialEquipment/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.4.0/AndroidManifest.xml:20:5-43
+MERGED from [SpecialEquipment:MPChartLibrary:unspecified] /Users/workspace/SpecialEquipment/app/build/intermediates/exploded-aar/SpecialEquipment/MPChartLibrary/unspecified/AndroidManifest.xml:17:5-19:41
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:23.4.0] /Users/workspace/SpecialEquipment/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		INJECTED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/workspace/SpecialEquipment/app/src/main/AndroidManifest.xml

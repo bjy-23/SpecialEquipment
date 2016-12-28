@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_use_unit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.wondersgroup.pork.activity.unit.UseUnitActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_height"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/padding"
+                android:paddingRight="@dimen/padding">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/equipment_code"
+                    android:textSize="@dimen/font_caption" />
+
+                <com.wondersgroup.pork.widget.ClearEditText
+                    android:id="@+id/equipment_code"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@null"
+                    android:hint="@string/input_equipment_code"
+                    android:textColorHint="@color/text_grey"
+                    android:textSize="@dimen/font_caption" />
+            </LinearLayout>
+
+            <include layout="@layout/subtitle_divide_line_bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_height"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/padding"
+                android:paddingRight="@dimen/padding">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/registration_no"
+                    android:textSize="@dimen/font_caption" />
+
+                <com.wondersgroup.pork.widget.ClearEditText
+                    android:id="@+id/registration_no"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@null"
+                    android:hint="@string/input_registration_no"
+                    android:textColorHint="@color/text_grey"
+                    android:textSize="@dimen/font_caption" />
+            </LinearLayout>
+
+            <include layout="@layout/subtitle_divide_line_bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_height"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/padding"
+                android:paddingRight="@dimen/padding">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="设备种类"
+                    android:textSize="@dimen/font_caption" />
+
+                <TextView
+                    android:id="@+id/equipment_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@null"
+                    android:hint="选择设备种类"
+                    android:textColorHint="@color/text_grey"
+                    android:textSize="@dimen/font_caption" />
+            </LinearLayout>
+
+            <include layout="@layout/subtitle_divide_line_bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_height"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/padding"
+                android:paddingRight="@dimen/padding">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/equipment_category"
+                    android:textSize="@dimen/font_caption" />
+
+                <TextView
+                    android:id="@+id/equipment_category"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@null"
+                    android:hint="@string/select_equipment_category"
+                    android:textColorHint="@color/text_grey"
+                    android:textSize="@dimen/font_caption" />
+            </LinearLayout>
+
+            <include layout="@layout/subtitle_divide_line_bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_height"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/padding"
+                android:paddingRight="@dimen/padding">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/use_unit_name"
+                    android:textSize="@dimen/font_caption" />
+
+                <com.wondersgroup.pork.widget.ClearEditText
+                    android:id="@+id/use_unit_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@null"
+                    android:hint="@string/input_use_unit_name"
+                    android:textColorHint="@color/text_grey"
+                    android:textSize="@dimen/font_caption" />
+            </LinearLayout>
+
+            <include layout="@layout/subtitle_divide_line_bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_height"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/padding"
+                android:paddingRight="@dimen/padding">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/use_place"
+                    android:textSize="@dimen/font_caption" />
+
+                <TextView
+                    android:id="@+id/use_place"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@null"
+                    android:hint="@string/select_use_place"
+                    android:textColorHint="@color/text_grey"
+                    android:textSize="@dimen/font_caption" />
+            </LinearLayout>
+
+            <include layout="@layout/subtitle_divide_line_bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_height"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/padding"
+                android:paddingRight="@dimen/padding">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="维保单位名称"
+                    android:textSize="@dimen/font_caption" />
+
+                <com.wondersgroup.pork.widget.ClearEditText
+                    android:id="@+id/wei_bao"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@null"
+                    android:hint="输入维保单位名称"
+                    android:textColorHint="@color/text_grey"
+                    android:textSize="@dimen/font_caption" />
+            </LinearLayout>
+
+            <include layout="@layout/subtitle_divide_line_bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_height"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/padding"
+                android:paddingRight="@dimen/padding">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="管理单元"
+                    android:textSize="@dimen/font_caption" />
+
+                <com.wondersgroup.pork.widget.ClearEditText
+                    android:id="@+id/manage"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@null"
+                    android:hint="输入管理单元"
+                    android:textColorHint="@color/text_grey"
+                    android:textSize="@dimen/font_caption" />
+            </LinearLayout>
+
+            <include layout="@layout/subtitle_divide_line_bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_height"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/padding"
+                android:paddingRight="@dimen/padding">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="登记开始日期"
+                    android:textSize="@dimen/font_caption" />
+
+                <TextView
+                    android:id="@+id/start_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@null"
+                    android:hint="选择登记开始日期"
+                    android:textColorHint="@color/text_grey"
+                    android:textSize="@dimen/font_caption" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_height"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/padding"
+                android:paddingRight="@dimen/padding">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="登记结束日期"
+                    android:textSize="@dimen/font_caption" />
+
+                <TextView
+                    android:id="@+id/end_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@null"
+                    android:hint="选择登记结束日期"
+                    android:textColorHint="@color/text_grey"
+                    android:textSize="@dimen/font_caption" />
+            </LinearLayout>
+
+            <include layout="@layout/subtitle_divide_line_bold" />
+
+            <Button
+                android:id="@+id/btn_search"
+                style="@style/ButtonMatch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/header_footer_left_right_padding"
+                android:layout_marginRight="@dimen/header_footer_left_right_padding"
+                android:layout_marginTop="@dimen/header_footer_left_right_padding"
+                android:background="@drawable/selector_theme_button"
+                android:text="@string/search" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

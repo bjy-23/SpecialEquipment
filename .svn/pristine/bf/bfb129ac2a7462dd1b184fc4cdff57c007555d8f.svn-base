@@ -1,0 +1,2 @@
+include ':app', ':MPChartLibrary'
+project(':MPChartLibrary').projectDir = new File('MPChartLib')

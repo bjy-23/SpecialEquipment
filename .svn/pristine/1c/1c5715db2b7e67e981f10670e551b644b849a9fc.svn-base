@@ -1,0 +1,69 @@
+package com.wondersgroup.special.adapter;
+
+import android.content.Context;
+import android.support.v7.widget.RecyclerView;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.TextView;
+
+import com.wondersgroup.special.R;
+import com.wondersgroup.special.entity.UseListResult;
+
+import java.util.List;
+
+/**
+ * Created by root on 11/3/16.
+ */
+
+public class UseUnitAdapter extends BaseAdapter<UseListResult.UseList, UseUnitAdapter.ViewHolder> {
+
+    public UseUnitAdapter(Context context, List<UseListResult.UseList> items) {
+        super(context, items);
+    }
+
+    @Override
+    public UseUnitAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        return new ViewHolder(inflater.inflate(R.layout.item_use_unit, parent, false));
+    }
+
+    @Override
+    public void onBindViewHolder(ViewHolder holder, int position) {
+        holder.mUnitName.setText(getItem(position).getUnitName());
+        holder.mUnitCode.setText("组织机构代码：" + getItem(position).getUnitCode());
+        holder.mUnitProperty.setText("单位性质：" + getItem(position).getUnitProperty());
+        holder.mUnitType.setText("单位类型：" + getItem(position).getUnitType());
+        holder.mUnitAddress.setText("单位地址：" + getItem(position).getUnitAddress());
+        holder.mUnitPhone.setText("联系电话：" + getItem(position).getUnitPhone());
+    }
+
+    static class ViewHolder extends RecyclerView.ViewHolder {
+        TextView mEntName, mWarningType, mEquipmentRegistrationNumber, mCreditCode, mEntType, mEntAddress;
+        TextView mBoiler, mVessel, mCylindex, mPipe, mElevator, mLifting, mVehicle, mFacility;
+        TextView mUnitName, mUnitCode, mUnitProperty, mUnitType, mUnitAddress, mUnitPhone;
+
+        public ViewHolder(View itemView) {
+            super(itemView);
+//            mEntName = (TextView) itemView.findViewById(R.id.ent_name);
+//            mWarningType = (TextView) itemView.findViewById(R.id.warning_type);
+//            mCreditCode = (TextView) itemView.findViewById(R.id.credit_code);
+//            mEquipmentRegistrationNumber = (TextView) itemView.findViewById(R.id.equipment_registration_number);
+//            mEntType = (TextView) itemView.findViewById(R.id.ent_type);
+//            mEntAddress = (TextView) itemView.findViewById(R.id.ent_address);
+//            mBoiler = (TextView) itemView.findViewById(R.id.boiler);
+//            mVessel = (TextView) itemView.findViewById(R.id.vessel);
+//            mCylindex = (TextView) itemView.findViewById(R.id.cylindex);
+//            mPipe = (TextView) itemView.findViewById(R.id.pipe);
+//            mElevator = (TextView) itemView.findViewById(R.id.elevator);
+//            mLifting = (TextView) itemView.findViewById(R.id.lifting);
+//            mVehicle = (TextView) itemView.findViewById(R.id.vehicle);
+//            mFacility = (TextView) itemView.findViewById(R.id.facility);
+            mUnitName = (TextView) itemView.findViewById(R.id.unit_name);
+            mUnitCode = (TextView) itemView.findViewById(R.id.unit_code);
+            mUnitProperty = (TextView) itemView.findViewById(R.id.unit_property);
+            mUnitType = (TextView) itemView.findViewById(R.id.unit_type);
+            mUnitAddress = (TextView) itemView.findViewById(R.id.unit_address);
+            mUnitPhone = (TextView) itemView.findViewById(R.id.unit_phone);
+        }
+    }
+}

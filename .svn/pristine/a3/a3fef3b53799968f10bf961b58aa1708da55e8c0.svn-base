@@ -1,0 +1,478 @@
+[
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/activity_query_unit_license.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/layout/activity_query_unit_license.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/snackbar.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/build/intermediates/exploded-aar/com.github.vajro/MaterialDesignLibrary/1.6/res/layout/snackbar.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/notification_template_big_media.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/notification_template_big_media.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_radio.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_list_menu_item_radio.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/abc_search_view.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_search_view.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/abc_dialog_title_material.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_dialog_title_material.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/fragment_home.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/layout/fragment_home.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_layout.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_list_menu_item_layout.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/color_selector.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/build/intermediates/exploded-aar/com.github.vajro/MaterialDesignLibrary/1.6/res/layout/color_selector.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/activity_routine.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/layout/activity_routine.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/notification_template_big_media_narrow.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/notification_template_big_media_narrow.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/activity_emergent.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/layout/activity_emergent.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/activity_total_equipment.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/layout/activity_total_equipment.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_icon.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_list_menu_item_icon.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/item_data.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/layout/item_data.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/activity_query_unit_unit.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/layout/activity_query_unit_unit.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/activity_equipment.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/layout/activity_equipment.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/abc_screen_simple.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_screen_simple.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_activity_chooser_view.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/activity_use_unit_list.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/layout/activity_use_unit_list.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/item_unit_unit.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/layout/item_unit_unit.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/item_ent_permit.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/layout/item_ent_permit.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_material.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_alert_dialog_material.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/abc_action_bar_title_item.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/activity_employment_detail.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/layout/activity_employment_detail.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/abc_action_bar_view_list_nav_layout.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_action_bar_view_list_nav_layout.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/activity_archive_detail.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/layout/activity_archive_detail.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/progress_dialog.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/build/intermediates/exploded-aar/com.github.vajro/MaterialDesignLibrary/1.6/res/layout/progress_dialog.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/activity_query_person_license.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/layout/activity_query_person_license.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/activity_analysis.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/layout/activity_analysis.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/activity_equipment_base_info.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/layout/activity_equipment_base_info.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/activity_check_unit_list.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/layout/activity_check_unit_list.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/support_simple_spinner_dropdown_item.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/support_simple_spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/item_analysis_list.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/layout/item_analysis_list.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/activity_equipment_list.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/layout/activity_equipment_list.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/divide_line_vertical_bold.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/layout/divide_line_vertical_bold.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/layout_dialog_list_item.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/layout/layout_dialog_list_item.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/abc_popup_menu_item_layout.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_popup_menu_item_layout.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/abc_screen_content_include.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_screen_content_include.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/activity_bdmap.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/layout/activity_bdmap.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_button_bar_material.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_alert_dialog_button_bar_material.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/abc_search_dropdown_item_icons_2line.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_search_dropdown_item_icons_2line.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/abc_action_menu_item_layout.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/item_equipment.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/layout/item_equipment.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/dialog.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/build/intermediates/exploded-aar/com.github.vajro/MaterialDesignLibrary/1.6/res/layout/dialog.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/abc_screen_simple_overlay_action_mode.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_screen_simple_overlay_action_mode.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/activity_overview.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/layout/activity_overview.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/layout_dialog_date.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/layout/layout_dialog_date.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/activity_ent_permit_detail.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/layout/activity_ent_permit_detail.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/activity_category.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/layout/activity_category.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/abc_expanded_menu_layout.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_expanded_menu_layout.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/activity_manage.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/layout/activity_manage.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/activity_check.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/layout/activity_check.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/select_dialog_item_material.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/select_dialog_item_material.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/activity_login.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/layout/activity_login.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/activity_person_permit_list.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/layout/activity_person_permit_list.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/activity_vote_list.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/layout/activity_vote_list.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/abc_action_mode_bar.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_action_mode_bar.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/activity_place.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/layout/activity_place.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/notification_template_part_chronometer.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/subtitle_divide_line_bold.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/layout/subtitle_divide_line_bold.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/activity_detail.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/layout/activity_detail.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/notification_media_cancel_action.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/notification_media_cancel_action.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/year_picker.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/layout/year_picker.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/item_divide_line_bold.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/layout/item_divide_line_bold.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/activity_equipment_detail.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/layout/activity_equipment_detail.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_checkbox.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_list_menu_item_checkbox.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/notification_template_lines.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/notification_template_lines.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/unit_license_item.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/layout/unit_license_item.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/notification_template_part_time.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/notification_template_part_time.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/item_recycler.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/layout/item_recycler.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/activity_base.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/layout/activity_base.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/item_employment_list.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/layout/item_employment_list.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/item_check.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/layout/item_check.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/item_manage.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/layout/item_manage.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/layout_unit_archive.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/layout/layout_unit_archive.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/abc_action_mode_close_item_material.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_action_mode_close_item_material.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/notification_template_media.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/notification_template_media.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/activity_check_unit_detail.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/layout/activity_check_unit_detail.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/abc_screen_toolbar.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_screen_toolbar.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/item_main.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/layout/item_main.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/item_use_unit.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/layout/item_use_unit.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/fragment_archive.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/layout/fragment_archive.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/activity_vote_detail.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/layout/activity_vote_detail.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/abc_action_bar_up_container.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_action_bar_up_container.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/activity_check_unit.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/layout/activity_check_unit.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/fragment_category.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/layout/fragment_category.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/activity_use_unit_detail.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/layout/activity_use_unit_detail.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/activity_main.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/abc_select_dialog_material.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_select_dialog_material.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/activity_use_unit.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/layout/activity_use_unit.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/select_dialog_singlechoice_material.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/select_dialog_singlechoice_material.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/fragment_warning.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/layout/fragment_warning.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/activity_person_permit.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/layout/activity_person_permit.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/activity_equipment_overview.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/layout/activity_equipment_overview.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/activity_welcome.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/layout/activity_welcome.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/select_dialog_multichoice_material.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/select_dialog_multichoice_material.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/activity_employment.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/layout/activity_employment.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/loading_dialog_layout.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/layout/loading_dialog_layout.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/item_vote.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/layout/item_vote.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view_list_item.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_activity_chooser_view_list_item.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/layout_dialog_section_date.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/layout/layout_dialog_section_date.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/number_indicator_spinner.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/build/intermediates/exploded-aar/com.github.vajro/MaterialDesignLibrary/1.6/res/layout/number_indicator_spinner.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/activity_record.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/layout/activity_record.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/activity_employment_list.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/layout/activity_employment_list.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/start_to_end_date.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/layout/start_to_end_date.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/activity_manage_list.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/layout/activity_manage_list.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/item_person_permit.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/layout/item_person_permit.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/abc_action_menu_layout.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_action_menu_layout.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/activity_ent_permit_list.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/layout/activity_ent_permit_list.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/layout_info.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/layout/layout_info.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/number_picker_with_selector_wheel.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/layout/number_picker_with_selector_wheel.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/layout_prompt_dialog.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/layout/layout_prompt_dialog.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/activity_base_recycler.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/layout/activity_base_recycler.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/activity_ent_permit.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/layout/activity_ent_permit.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/divide_line_bold.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/layout/divide_line_bold.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/notification_media_action.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/notification_media_action.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/activity_vote.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/layout/activity_vote.xml"
+    },
+    {
+        "merged": "/Users/workspace/SpecialEquipment/app/build/intermediates/res/merged/debug/layout/fragment_setting.xml",
+        "source": "/Users/workspace/SpecialEquipment/app/src/main/res/layout/fragment_setting.xml"
+    }
+]

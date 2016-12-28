@@ -1,0 +1,11 @@
+package com.wondersgroup.special.entity;
+
+import java.util.List;
+
+/**
+ * Created by bjy on 2016/12/15.
+ */
+
+public class QueryAccidentResult extends BaseListResult{
+    private List<QueryAccidentEntity> resultList;
+}

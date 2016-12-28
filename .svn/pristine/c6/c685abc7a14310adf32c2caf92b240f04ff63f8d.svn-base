@@ -1,0 +1,68 @@
+package com.wondersgroup.special.activity;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.TextView;
+import com.wondersgroup.special.R;
+import com.wondersgroup.special.constant.Params;
+import com.wondersgroup.special.entity.EquipmentListResult;
+
+public class EquipmentDetailActivity extends BaseActivity {
+    private View mBasicInfo, mManageInfo, mCheckInfo, mAccidentInfo;
+    private EquipmentListResult.ResultList result;
+    private TextView mEquipmentName, mType, mCode, mRegNo, mAddress;
+
+    @Override
+    protected void initView() {
+        setContentView(R.layout.activity_equipment_detail);
+        mTitle.setText("特种设备详情");
+        mEquipmentName = (TextView) findViewById(R.id.equipment_name);
+        mType = (TextView) findViewById(R.id.type);
+        mCode = (TextView) findViewById(R.id.code);
+        mRegNo = (TextView) findViewById(R.id.reg_no);
+        mAddress = (TextView) findViewById(R.id.address);
+        mBasicInfo = findViewById(R.id.basic_info);
+        ((TextView) mBasicInfo.findViewById(R.id.text)).setText("基本信息");
+        mManageInfo = findViewById(R.id.manage_info);
+        ((TextView) mManageInfo.findViewById(R.id.text)).setText("监管信息");
+        mCheckInfo = findViewById(R.id.check_info);
+        ((TextView) mCheckInfo.findViewById(R.id.text)).setText("检验信息");
+        mAccidentInfo = findViewById(R.id.accident_info);
+        ((TextView) mAccidentInfo.findViewById(R.id.text)).setText("事故信息");
+        mBasicInfo.setOnClickListener(this);
+        mManageInfo.setOnClickListener(this);
+        mCheckInfo.setOnClickListener(this);
+        mAccidentInfo.setOnClickListener(this);
+    }
+
+    @Override
+    protected void initData(Bundle savedInstanceState) {
+        result = (EquipmentListResult.ResultList) getIntent().getExtras().getSerializable(Params.DATA);
+        if (null != result) {
+            mEquipmentName.setText(result.getDeviceName());
+            mType.setText(result.getDeviceType());
+            mCode.setText(result.getDeviceNumber());
+            mRegNo.setText(result.getUseCerNum());
+            mAddress.setText(result.getDeviceAddress());
+        }
+    }
+
+    @Override
+    public void onClick(View v) {
+        super.onClick(v);
+        switch (v.getId()) {
+            case R.id.basic_info:
+                startActivity(new Intent(EquipmentDetailActivity.this, EquipmentBaseInfoActivity.class));
+                break;
+            case R.id.manage_info:
+                break;
+            case R.id.check_info:
+                break;
+            case R.id.accident_info:
+                break;
+            default:
+                break;
+        }
+    }
+}

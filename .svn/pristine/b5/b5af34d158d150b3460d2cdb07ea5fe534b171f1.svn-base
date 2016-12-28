@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wondersgroup.special"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="18"
+        android:targetSdkVersion="23" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:name="com.wondersgroup.pork.AppApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="x3rtdW03bThhwFuZUAQNwgfcxxth0PHm" />
+
+        <activity android:name="com.wondersgroup.pork.activity.LoginActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.wondersgroup.pork.activity.WelcomeActivity" />
+        <activity android:name="com.wondersgroup.pork.activity.MainActivity" />
+        <activity android:name="com.wondersgroup.pork.activity.unit.UseUnitActivity" />
+        <activity android:name="com.wondersgroup.pork.activity.unit.UseUnitListActivity" />
+        <activity android:name="com.wondersgroup.pork.activity.unit.UseUnitDetailActivity" />
+        <activity android:name="com.wondersgroup.pork.activity.unit.ProductUnitActivity" />
+        <activity android:name="com.wondersgroup.pork.activity.unit.ProductUnitListActivity" />
+        <activity android:name="com.wondersgroup.pork.activity.unit.ProductUnitDetailActivity" />
+        <activity android:name="com.wondersgroup.pork.activity.EmploymentActivity" />
+        <activity android:name="com.wondersgroup.pork.activity.EmploymentListActivity" />
+        <activity android:name="com.wondersgroup.pork.activity.EmploymentDetailActivity" />
+        <activity android:name="com.wondersgroup.pork.activity.EquipmentActivity" />
+        <activity android:name="com.wondersgroup.pork.activity.EquipmentListActivity" />
+        <activity android:name="com.wondersgroup.pork.activity.EquipmentDetailActivity" />
+        <activity android:name="com.wondersgroup.pork.activity.CategoryActivity" />
+        <activity android:name="com.wondersgroup.pork.activity.AnalysisActivity" />
+        <activity android:name="com.wondersgroup.pork.activity.OverviewActivity" />
+        <activity android:name="com.wondersgroup.pork.activity.DetailActivity" />
+        <activity android:name="com.wondersgroup.pork.activity.unit.CheckUnitActivity" />
+        <activity android:name="com.wondersgroup.pork.activity.unit.CheckUnitListActivity" />
+        <activity android:name="com.wondersgroup.pork.activity.EntPermitActivity" />
+        <activity android:name="com.wondersgroup.pork.activity.EntPermitListActivity" />
+        <activity android:name="com.wondersgroup.pork.activity.PersonPermitActivity" />
+        <activity android:name="com.wondersgroup.pork.activity.PersonPermitListActivity" />
+        <activity android:name="com.wondersgroup.pork.activity.ManageActivity" />
+        <activity android:name="com.wondersgroup.pork.activity.ManageListActivity" />
+        <activity android:name="com.wondersgroup.pork.activity.VoteActivity" />
+        <activity android:name="com.wondersgroup.pork.activity.VoteListActivity" />
+        <activity android:name="com.wondersgroup.pork.activity.EntPermitDetailActivity" />
+        <activity android:name="com.wondersgroup.pork.homepage.HomeDataActivity" />
+        <activity android:name="com.wondersgroup.pork.homepage.EmergentActivity" />
+        <activity android:name="com.wondersgroup.pork.homepage.PlaceActivity" />
+        <activity android:name="com.wondersgroup.pork.homepage.TotalEquipmentActivity" />
+        <activity android:name="com.wondersgroup.pork.homepage.EquipmentOverviewActivity" />
+        <activity android:name="com.wondersgroup.pork.activity.BDMapActivity" />
+        <activity android:name="com.wondersgroup.pork.activity.QueryRecordActivity" />
+        <activity android:name="com.wondersgroup.pork.activity.RecordActivity" />
+        <activity android:name="com.wondersgroup.pork.activity.unit.CheckUnitDetailActivity" />
+        <activity android:name="com.wondersgroup.pork.activity.VoteDetailActivity" />
+        <activity android:name="com.wondersgroup.pork.archive.RoutineActivity" />
+        <activity android:name="com.wondersgroup.pork.archive.ArchiveDetailActivity" />
+        <activity android:name="com.wondersgroup.pork.archive.CheckActivity" />
+        <activity android:name="com.wondersgroup.pork.activity.EquipmentBaseInfoActivity" />
+    </application>
+
+</manifest>

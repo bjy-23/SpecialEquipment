@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_use_unit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.wondersgroup.special.activity.unit.UseUnitActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/padding"
+        android:paddingRight="@dimen/padding">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="单元名称"
+            android:textSize="@dimen/font_caption" />
+
+        <com.wondersgroup.special.widget.ClearEditText
+            android:id="@+id/unit_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@null"
+            android:hint="输入单元名称"
+            android:textColorHint="@color/text_grey"
+            android:textSize="@dimen/font_caption" />
+    </LinearLayout>
+
+    <include layout="@layout/subtitle_divide_line_bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/padding"
+        android:paddingRight="@dimen/padding">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="单元地址"
+            android:textSize="@dimen/font_caption" />
+
+        <com.wondersgroup.special.widget.ClearEditText
+            android:id="@+id/unit_address"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@null"
+            android:hint="输入单元地址"
+            android:textColorHint="@color/text_grey"
+            android:textSize="@dimen/font_caption" />
+    </LinearLayout>
+
+    <include layout="@layout/subtitle_divide_line_bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/padding"
+        android:paddingRight="@dimen/padding">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="设备编号"
+            android:textSize="@dimen/font_caption" />
+
+        <com.wondersgroup.special.widget.ClearEditText
+            android:id="@+id/equ_code"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@null"
+            android:hint="输入设备编号"
+            android:textColorHint="@color/text_grey"
+            android:textSize="@dimen/font_caption" />
+    </LinearLayout>
+
+    <include layout="@layout/subtitle_divide_line_bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/padding"
+        android:paddingRight="@dimen/padding">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="设备地址"
+            android:textSize="@dimen/font_caption" />
+
+        <com.wondersgroup.special.widget.ClearEditText
+            android:id="@+id/equ_address"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@null"
+            android:hint="输入设备地址"
+            android:textColorHint="@color/text_grey"
+            android:textSize="@dimen/font_caption" />
+    </LinearLayout>
+
+    <include layout="@layout/subtitle_divide_line_bold" />
+
+    <Button
+        android:id="@+id/btn_search"
+        style="@style/ButtonMatch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/header_footer_left_right_padding"
+        android:layout_marginRight="@dimen/header_footer_left_right_padding"
+        android:layout_marginTop="@dimen/header_footer_left_right_padding"
+        android:background="@drawable/selector_theme_button"
+        android:text="@string/search" />
+</LinearLayout>

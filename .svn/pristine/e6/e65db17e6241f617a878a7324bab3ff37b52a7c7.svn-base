@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_check"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.wondersgroup.special.archive.CheckActivity">
+
+    <include
+        android:id="@+id/base_info"
+        layout="@layout/layout_info" />
+
+    <include layout="@layout/subtitle_divide_line_bold" />
+
+    <include
+        android:id="@+id/record_info"
+        layout="@layout/layout_info" />
+
+    <include layout="@layout/subtitle_divide_line_bold" />
+</LinearLayout>

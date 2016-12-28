@@ -1,0 +1,751 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/margin_module"
+            android:layout_marginRight="@dimen/margin_module"
+            android:layout_toLeftOf="@+id/layout_right"
+            android:layout_toRightOf="@+id/image_back"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_title" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/margin_module"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/margin_module"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/img_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_module"
+            android:src="@mipmap/icon_msg" />
+
+        <TextSwitcher
+            android:id="@+id/switcher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/img_msg"
+            android:inAnimation="@anim/text_in"
+            android:outAnimation="@anim/text_out" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon_more" />
+    </RelativeLayout>
+
+    <com.wondersgroup.special.widget.DetailScrollview
+        android:id="@+id/detail_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_module"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/indicator_right_padding">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/indicator_right_padding">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="@string/ent_unit"
+                            android:src="@mipmap/icon_zonglan" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_module"
+                            android:text="@string/overall_data_overview"
+                            android:textColor="@color/text_littte_black"
+                            android:textSize="@dimen/font_body" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/overall_data_overview_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingRight="@dimen/indicator_right_padding"
+                        android:text=""
+                        android:textColor="@color/text_grey"
+                        android:textSize="@dimen/font_caption" />
+                </RelativeLayout>
+
+                <include layout="@layout/subtitle_divide_line_bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/indicator_right_padding"
+                        android:paddingRight="@dimen/indicator_right_padding"
+                        android:paddingTop="@dimen/indicator_right_padding"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:id="@+id/linear_equipment_no"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:paddingLeft="@dimen/indicator_right_padding">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="特种设备数："
+                                android:textColor="@color/text_grey"
+                                android:textSize="@dimen/font_caption" />
+
+                            <TextView
+                                android:id="@+id/text_equipment_no"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:textColor="@color/theme"
+                                android:textSize="@dimen/font_caption" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linear_use"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="使用单位数："
+                                android:textColor="@color/text_grey"
+                                android:textSize="@dimen/font_caption" />
+
+                            <TextView
+                                android:id="@+id/text_use_unit_no"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:textColor="@color/theme"
+                                android:textSize="@dimen/font_caption" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/indicator_right_padding"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:id="@+id/linear_product"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:paddingLeft="@dimen/indicator_right_padding">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="生产单位数："
+                                android:textColor="@color/text_grey"
+                                android:textSize="@dimen/font_caption" />
+
+                            <TextView
+                                android:id="@+id/text_production_unit_no"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:textColor="@color/theme"
+                                android:textSize="@dimen/font_caption" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linear_manage"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="管理单元数："
+                                android:textColor="@color/text_grey"
+                                android:textSize="@dimen/font_caption" />
+
+                            <TextView
+                                android:id="@+id/text_management_unit_no"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:textColor="@color/theme"
+                                android:textSize="@dimen/font_caption" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="@dimen/indicator_right_padding"
+                        android:paddingLeft="@dimen/indicator_right_padding"
+                        android:paddingRight="@dimen/indicator_right_padding"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:id="@+id/linear_elevator"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:paddingLeft="@dimen/indicator_right_padding">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="电梯维保单位："
+                                android:textColor="@color/text_grey"
+                                android:textSize="@dimen/font_caption" />
+
+                            <TextView
+                                android:id="@+id/text_elevator_maintenance_unit"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:textColor="@color/theme"
+                                android:textSize="@dimen/font_caption" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="超期未检率："
+                                android:textColor="@color/text_grey"
+                                android:textSize="@dimen/font_caption" />
+
+                            <TextView
+                                android:id="@+id/text_overdue_rate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:textColor="@color/text_grey"
+                                android:textSize="@dimen/font_caption" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_module"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/indicator_right_padding">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/indicator_right_padding">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="@string/ent_unit"
+                            android:src="@mipmap/icon_qujian" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_module"
+                            android:text="@string/interval_data_overview"
+                            android:textColor="@color/text_littte_black"
+                            android:textSize="@dimen/font_body" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linear_section"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:orientation="horizontal"
+                        android:paddingRight="@dimen/indicator_right_padding">
+
+                        <TextView
+                            android:id="@+id/interval_start_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/text_grey"
+                            android:textSize="@dimen/font_caption" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" 至 "
+                            android:textColor="@color/text_grey"
+                            android:textSize="@dimen/font_caption" />
+
+                        <TextView
+                            android:id="@+id/interval_end_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/text_grey"
+                            android:textSize="@dimen/font_caption" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <include layout="@layout/subtitle_divide_line_bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/indicator_right_padding"
+                        android:paddingRight="@dimen/indicator_right_padding"
+                        android:paddingTop="@dimen/indicator_right_padding"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:paddingLeft="@dimen/indicator_right_padding">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="检查单位数："
+                                android:textColor="@color/text_grey"
+                                android:textSize="@dimen/font_caption" />
+
+                            <TextView
+                                android:id="@+id/text_check"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:textColor="@color/text_grey"
+                                android:textSize="@dimen/font_caption" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linear_check_equ"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="检查设备数："
+                                android:textColor="@color/text_grey"
+                                android:textSize="@dimen/font_caption" />
+
+                            <TextView
+                                android:id="@+id/text_check_equipment"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:textColor="@color/theme"
+                                android:textSize="@dimen/font_caption" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/indicator_right_padding"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:paddingLeft="@dimen/indicator_right_padding">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="隐患整改率："
+                                android:textColor="@color/text_grey"
+                                android:textSize="@dimen/font_caption" />
+
+                            <TextView
+                                android:id="@+id/text_hidden_rectification_rate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:textColor="@color/text_grey"
+                                android:textSize="@dimen/font_caption" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="事故数："
+                                android:textColor="@color/text_grey"
+                                android:textSize="@dimen/font_caption" />
+
+                            <TextView
+                                android:id="@+id/text_accident"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:textColor="@color/text_grey"
+                                android:textSize="@dimen/font_caption" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="@dimen/indicator_right_padding"
+                        android:paddingLeft="@dimen/indicator_right_padding"
+                        android:paddingRight="@dimen/indicator_right_padding"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:paddingLeft="@dimen/indicator_right_padding">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="案件数："
+                                android:textColor="@color/text_grey"
+                                android:textSize="@dimen/font_caption" />
+
+                            <TextView
+                                android:id="@+id/text_cases"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:textColor="@color/text_grey"
+                                android:textSize="@dimen/font_caption" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_pie_chart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_module"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/indicator_right_padding">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/indicator_right_padding">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/ent_unit"
+                        android:src="@mipmap/icon_equipment_overview" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_module"
+                        android:text="@string/equipment_overview"
+                        android:textColor="@color/text_littte_black"
+                        android:textSize="@dimen/font_body" />
+
+                    <include
+                        android:id="@+id/deviceOverviewDate"
+                        layout="@layout/start_to_end_date" />
+                </LinearLayout>
+
+                <include layout="@layout/subtitle_divide_line_bold" />
+
+                <LinearLayout
+                    android:id="@+id/linear_pie"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.github.mikephil.charting.charts.PieChart
+                        android:id="@+id/pie_chart"
+                        android:layout_width="match_parent"
+                        android:layout_height="240dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_combined_chart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_module"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/indicator_right_padding">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/indicator_right_padding">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/ent_unit"
+                        android:src="@mipmap/icon_shiyongdanwei" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_module"
+                        android:text="@string/total_equipment"
+                        android:textColor="@color/text_littte_black"
+                        android:textSize="@dimen/font_body" />
+
+                    <include
+                        android:id="@+id/deviceUseInfoDate"
+                        layout="@layout/start_to_end_date" />
+                </LinearLayout>
+
+                <include layout="@layout/subtitle_divide_line_bold" />
+
+                <LinearLayout
+                    android:id="@+id/linear_combined"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.github.mikephil.charting.charts.CombinedChart
+                        android:id="@+id/combined_chart"
+                        android:layout_width="match_parent"
+                        android:layout_height="240dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_horizontal_chart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_module"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/indicator_right_padding">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/indicator_right_padding">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/ent_unit"
+                        android:src="@mipmap/icon_place_analysis" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_module"
+                        android:text="@string/place_analysis"
+                        android:textColor="@color/text_littte_black"
+                        android:textSize="@dimen/font_body" />
+
+                    <include
+                        android:id="@+id/elevatorUseInfoDate"
+                        layout="@layout/start_to_end_date" />
+                </LinearLayout>
+
+                <include layout="@layout/subtitle_divide_line_bold" />
+
+                <LinearLayout
+                    android:id="@+id/linear_hbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.github.mikephil.charting.charts.HorizontalBarChart
+                        android:id="@+id/horizontal_bar_chart"
+                        android:layout_width="match_parent"
+                        android:layout_height="240dp"
+                        android:background="@android:color/white" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_line_chart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_module"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/indicator_right_padding">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/indicator_right_padding">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="@string/ent_unit"
+                            android:src="@mipmap/icon_emergent_events" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_module"
+                            android:text="@string/emergent_events"
+                            android:textColor="@color/text_littte_black"
+                            android:textSize="@dimen/font_body" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/emergencyDate"
+                        style="@style/datePickerTextView"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center" />
+                </RelativeLayout>
+
+                <include layout="@layout/subtitle_divide_line_bold" />
+
+                <LinearLayout
+                    android:id="@+id/linear_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.github.mikephil.charting.charts.LineChart
+                        android:id="@+id/line_chart"
+                        android:layout_width="match_parent"
+                        android:layout_height="240dp"
+                        android:background="@android:color/white" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </com.wondersgroup.special.widget.DetailScrollview>
+
+</LinearLayout>
